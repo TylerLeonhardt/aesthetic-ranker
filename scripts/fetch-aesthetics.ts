@@ -11,7 +11,9 @@ import { fileURLToPath } from 'node:url';
 
 const API_BASE = 'https://cari.institute/api/aesthetics';
 const TOTAL_PAGES = 5;
-const ARENA_DELAY_MS = 100;
+const ARENA_DELAY_MS = 1500;
+const MAX_RETRIES = 3;
+const RETRY_BASE_DELAY_MS = 5000;
 
 interface CARIAesthetic {
   name: string;
@@ -44,6 +46,26 @@ interface EnrichedAesthetic {
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/** Fetch with retry and exponential backoff for rate-limited APIs */
+async function fetchWithRetry(url: string, label: string): Promise<Response | null> {
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    const res = await fetch(url);
+    if (res.ok) return res;
+    if (res.status === 429 && attempt < MAX_RETRIES) {
+      const retryAfterHeader = res.headers.get('retry-after');
+      const retryAfterSeconds = retryAfterHeader ? parseInt(retryAfterHeader, 10) : NaN;
+      const delay = !isNaN(retryAfterSeconds) && retryAfterSeconds >= 0
+        ? (retryAfterSeconds + 1) * 1000
+        : RETRY_BASE_DELAY_MS * Math.pow(2, attempt);
+      console.warn(`  ⏳ Rate limited on "${label}", retrying in ${Math.round(delay / 1000)}s (attempt ${attempt + 1}/${MAX_RETRIES})...`);
+      await sleep(delay);
+      continue;
+    }
+    return res;
+  }
+  return null;
+}
 
 async function fetchAllAesthetics(): Promise<CARIAesthetic[]> {
   const all: CARIAesthetic[] = [];
@@ -85,8 +107,8 @@ async function fetchAllAesthetics(): Promise<CARIAesthetic[]> {
 /** Scrape the CARI aesthetic page to find the Are.na channel slug */
 async function getArenaSlug(urlSlug: string): Promise<string | null> {
   try {
-    const res = await fetch(`https://cari.institute/aesthetics/${urlSlug}`);
-    if (!res.ok) return null;
+    const res = await fetchWithRetry(`https://cari.institute/aesthetics/${urlSlug}`, `CARI:${urlSlug}`);
+    if (!res?.ok) return null;
     const html = await res.text();
     // HTML contains escaped slashes: https:\/\/api.are.na\/v2\/channels\/slug
     const match = html.match(/const\s+mediaSourceUrl\s*=\s*"https:[^"]*\\?\/channels\\?\/([^"?]+)"/);
@@ -99,8 +121,8 @@ async function getArenaSlug(urlSlug: string): Promise<string | null> {
 /** Fetch Are.na channel data for high-res images and description */
 async function fetchArenaChannel(slug: string): Promise<{ description: string; images: AestheticImage[] } | null> {
   try {
-    const res = await fetch(`https://api.are.na/v2/channels/${slug}?per=6`);
-    if (!res.ok) return null;
+    const res = await fetchWithRetry(`https://api.are.na/v2/channels/${slug}?per=6`, `Are.na:${slug}`);
+    if (!res?.ok) return null;
     const data = await res.json();
 
     const description: string = data.metadata?.description

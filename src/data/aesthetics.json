@@ -2210,9 +2210,34 @@
     "startYear": "Early 2000s",
     "endYear": "Mid 2000s",
     "decadeYear": "2000s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/fa9492acb42e4799ac61efea7bda90b1.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzExOTI4OC9vcmlnaW5hbF9iMDljYjM3OGFlNmQ4NGU3ZDg4NjJiNTc5MmFhZDg0Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Ubiquitous on the early web. The often-isometric aesthetic of lush, elaborate pixel art and similar motifs in web design and illustration.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzExOTI4OC9vcmlnaW5hbF9iMDljYjM3OGFlNmQ4NGU3ZDg4NjJiNTc5MmFhZDg0Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Junkbot (2001)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzExOTMwNi9vcmlnaW5hbF81NzdjOWExZmZmODM5MTI2ZTM1N2E2ZmJiMmI5YjcxNC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Dexter's Mixmaster (2002)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzExOTMxNC9vcmlnaW5hbF9hN2M0ZjgyMzMxNzA0MzI4NTFiMDM5MmIyY2E1MzFkNS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Captain Planet and the Robots of Zarm (2004)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzExOTMyOS9vcmlnaW5hbF85MjgyZTRmYjA1M2IxZGYwMzU1NWRjODIxM2M3NTg4Yy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Pick Me Up (2006)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzExOTMzNy9vcmlnaW5hbF9hM2EzNjYzMWQyOWExMmRiNzUzMWRhY2RlOGIyMmViYS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Hotel Kultakala (2002)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzExOTM2Ni9vcmlnaW5hbF9mZWRiZDQ3ODc2MzVkYWExMTE2OGQ2MmFlZDU2ZTgyMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Ugress - Loungemeister (2002)"
+      }
+    ]
   },
   {
     "name": "Polychrome",
@@ -2220,9 +2245,34 @@
     "startYear": "Early 2010s",
     "endYear": "Current",
     "decadeYear": "2010s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/cb5f918595a24235b5d0a7287a086327.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA2OTQ5MS9vcmlnaW5hbF8xYTJlYWY5Y2NhODkwODE1NWI5ZjExZTA2ZGVlNmM2MS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Ink in water, smoke, liquids, oils, paint explosions, blurring, melding colours. Usually a wide color palette.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA2OTQ5MS9vcmlnaW5hbF8xYTJlYWY5Y2NhODkwODE1NWI5ZjExZTA2ZGVlNmM2MS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Adata Branding (2020)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA2OTUwMi9vcmlnaW5hbF84ZGI2YTY5MmJjMjI2YjY5MGU1ZmZhODdiYjMzNTg5ZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Zedd- True Colors (2015)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA2OTUxNS9vcmlnaW5hbF9mNGE3ZTQ1MDRjMDM2MGJjZjkzZDY2MDRiMDZiMDZiMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Photoshop CC  (2015)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA2OTUyNS9vcmlnaW5hbF82NmI5ZWM1Yjg5N2IyODM1ODc2MGIzNmZhZGZlOTAyYS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Wallpaper for iOS11 (2015)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA2OTU0Mi9vcmlnaW5hbF8yMzBmNzY5MDFjZThiNmRiMWZiNzdlZTQyMDAwMTFhMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Branding for Sonatic (2020)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzM3NjE1MC9vcmlnaW5hbF8zNjcxNDIyYmFhZTVjYzQxM2E3MTUwN2ZiY2VkZGNmMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Apple \"Color Burst 1\" Wallpaper"
+      }
+    ]
   },
   {
     "name": "Pomo Faux Ruins",
@@ -2230,9 +2280,34 @@
     "startYear": "Late 1970s",
     "endYear": "Late 1980s",
     "decadeYear": "1980s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/ed349ba7425b4d058167cc2b6dbe3692.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzYwMDQxMC9vcmlnaW5hbF82Y2U1MjA0NGRkMzVhM2M2MmQ3MDkwMmEyNTAyZGQxZi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Intentionally distressed and crumbling structures as an architecture storytelling element (ex. Best stores). Ranges from 'contemporary ruins', eg. then-current spaces with distressed, crumbling, ripped, or decayed elements, to 'ancient ruins', which specifically reference motifs from Classical antiquity.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzYwMDQxMC9vcmlnaW5hbF82Y2U1MjA0NGRkMzVhM2M2MmQ3MDkwMmEyNTAyZGQxZi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Toy Block House IV (1982)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzYwMDQyMy9vcmlnaW5hbF85YTlmNWFiMDc1ZThmZjk4Y2EzZjRlY2RlNjk1Zjc3OS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Restaurant Interior (1984)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzYwMDQzOS9vcmlnaW5hbF9mOWFlNDBiMzNkNmU5M2VlZDE1NzlmZmY5M2Y4Y2RmMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Goldi Shoe Store at Woodfield Mall (1986)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzYwMDQ0NC9vcmlnaW5hbF85MTI3NzhkOWVmYWVlZTUzMmYwNzA5MGRiNmI5NzcwYS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Goldi Shoe Store at Woodfield Mall (1986)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzYwMDQ0OC9vcmlnaW5hbF83ODc0OGMwYzExMTQyOTc1YWYxMWMxOTI4MzU4M2M1Mi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Goldi Shoe Store at Woodfield Mall (1986)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzYwMDQ0Ny9vcmlnaW5hbF9iMDE1MTVhZjFlYjk3NTlhMzFhMzA3MjAyNzgzOTc5NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Goldi Shoe Store at Woodfield Mall (1986)"
+      }
+    ]
   },
   {
     "name": "Preschool Pop",
@@ -2240,9 +2315,34 @@
     "startYear": "Early 1990s",
     "endYear": "Early 2000s",
     "decadeYear": "1990s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/387fe69f0dc34453a8376ec7ccde136b.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ0ODI5Ny9vcmlnaW5hbF8yZmVjOTQ4NzBlZGNmYjdiMjIwNzRmNjk3Y2IyMDE1NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Crayons, pencils, the classic little kid drawing style (stick figures, house, sun, tree, etc.), oversized versions of toys, esp. alphabet blocks.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ0ODI5Ny9vcmlnaW5hbF8yZmVjOTQ4NzBlZGNmYjdiMjIwNzRmNjk3Y2IyMDE1NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Crayola Kids Store at Woodfield Mall, Schaumburg IL (1992)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ0ODMwNi9vcmlnaW5hbF82YzJlYjdhODE5MjhlMzFiYTlhNzlhM2QyOGJmNDM0NC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Crayola Kids Store at Woodfield Mall, Schaumburg IL (1992)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ0ODMwOC9vcmlnaW5hbF81MTAyOWM2MjQ1NTVlMjA4OGRjNjU0ZGYwZDIzNDljZi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Crayola Kids Store at Woodfield Mall, Schaumburg IL (1992)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ0MTM5Ni9vcmlnaW5hbF84MWZlZjA4N2U1OTQ1NjdlYWUwZTFhNmQ5MTNlNTc1Mi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "The Toy Box at Regal Cinemas Funscape (YNL)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ0MTM0Ni9vcmlnaW5hbF9lNWIzNDhiZGI1YzY4YWFhY2NiYTczZjc4MzY0NWEwMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Texas Scottish Rite Hospital for Children (Pre-1999)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ0MTM0Ny9vcmlnaW5hbF9mOTFkNjgzNWUyOTA4NzUzMjE3MmU0NWQ1NmMwNGJkMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Texas Scottish Rite Hospital for Children (Pre-1999)"
+      }
+    ]
   },
   {
     "name": "Pulp Fantasy",
@@ -2250,9 +2350,34 @@
     "startYear": "Early 1960s",
     "endYear": "Mid 1980s",
     "decadeYear": "1970s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/16f3eda7cee7466287f1322d9b268952.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDM3Ny9vcmlnaW5hbF9mMTQ4MjY1ZjNiZjFlN2YxZDdhOGYwZDlkMDhjZDJhNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "The \"70s scifi\" aesthetic of dreamy, surreal paintings and imaginative illustration. Examples show up in both Sci-Fi & Fantasy genres. Seen often used in visuals for prog rock.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDM3Ny9vcmlnaW5hbF9mMTQ4MjY1ZjNiZjFlN2YxZDdhOGYwZDlkMDhjZDJhNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Starcastle - Citadel (1977)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDM5Mi9vcmlnaW5hbF80MjExYzllNGI5ZTcxY2YxMTFlZGQ3MmE2NDI1ZmQzYS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "image.png"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDM5Ny9vcmlnaW5hbF8zMWQyNTFmMzY3YjFhOGU1MWIxMmJhMjhmMGVmOTRmMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "The Martian Chronicles Cover"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDQwMy9vcmlnaW5hbF9hNjlhZjViYWE2NDE1YjNhNDU3NjcxOWU0ODE4NTJkZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "image.png"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDQxNS9vcmlnaW5hbF82MmY0OWI5ZTI2OGFiZTk3NGQ1Y2M1MTFiZGNkOGFjZi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Harry Harrison - The Stainless Steel Rat"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDQyNC9vcmlnaW5hbF83Njc0OGNkNTQwMmUxZWFhODZlOGRlZGY2MTMwNDFiNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Fire and Ice (1983)"
+      }
+    ]
   },
   {
     "name": "Rad Dog / Neon Surf",
@@ -2260,9 +2385,34 @@
     "startYear": "Late 1980s",
     "endYear": "Early 1990s",
     "decadeYear": "1990s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/cd531ca0bacf403f81b14c8f5a6210cd.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzMyNDU3NS9vcmlnaW5hbF9hY2ZiYmRkNDcxNDAxMTI0NmM3OTdiYmQwZDViMTBmYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Neon paint splatters, hypercolors, tribal motifs, and \"radical\" surf / skate imagery. Pioneered by edgy, mold-breaking teen-marketed apparel and equipment brands. Note: Most images, along with the term, are sourced & curated from the Facebook group, Neon Ooze/Surf Shack, created by Karl Kraft.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzMyNDU3NS9vcmlnaW5hbF9hY2ZiYmRkNDcxNDAxMTI0NmM3OTdiYmQwZDViMTBmYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Jam 'n Roll Riders Packaging (1988)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzMyNDU4NS9vcmlnaW5hbF83MTNmNjcxYTNiYjczNGYyN2QwYTVkYzI4N2ZhNzRlZi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Sega Channel Game Service (1994)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzMyNDU5My9vcmlnaW5hbF80YTE5NGU1NDgxYzI2OGY0MGQ1ZTVjZjZhMTQ2Njc1Ni5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Sega Channel Game Service (1994)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzMyNDY2Mi9vcmlnaW5hbF8xNGNhYTgzMDc1YWQ3ZDRjZTAzMjE0MjM4OGFiODhkNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Balzac Balloon Balls (1989)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzMyNDY2My9vcmlnaW5hbF8yNmZhMzljZjg5MGE5MjY0YTljNTA3M2I1ZTdiZDdjNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Balzac Balloon Balls (1989)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzMyNDY3NC9vcmlnaW5hbF9iM2ZkZDExY2Q1MWU0MjUzOTBiMTgwMDU1MTVjNTMwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Church Street Market Surf Depot (1990)"
+      }
+    ]
   },
   {
     "name": "Radical Surrealism",
@@ -2270,9 +2420,34 @@
     "startYear": "Late 1960s",
     "endYear": "Early 1980s",
     "decadeYear": "1970s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/c0c11508540f4cdeb80f15d117abe591.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTI2Ni9vcmlnaW5hbF9jYmVmMGQ3ZjdkYTIxOTViNWE2MzVlZjJkYjg3YzI5NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Emerged in the very late 1960s and peaked in the 1970s, when the Pop Art movement was influencing graphic, product, furniture, and interior design. The main proponents of this style came out of the Italian radical design movement; groups like Studio Alchimia and Memphis Milano to breakout in the 1980s. 'Think Big', a chain selling oversized 'Pop' object versions of everyday household items, also emerged from this zeitgeist.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTI2Ni9vcmlnaW5hbF9jYmVmMGQ3ZjdkYTIxOTViNWE2MzVlZjJkYjg3YzI5NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Furniture as Clothing (1982)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTI3OS9vcmlnaW5hbF80NjhjMGZhODY5NzlhZWZkNWE5Nzg4ZDU3MmM1MDg0Ny5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Casa Azul (1972)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTI5OC9vcmlnaW5hbF8zNWY4YzlhMGFjOWEzZTVlMDdiYmQyOWZlY2I5OGVjNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Art created for Yuste Publicidad (1965)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTMzMS9vcmlnaW5hbF8zYzFjMTVmMDVkNmZlYjI5YTgwOGJjZTdiMjA1ZjcxMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Sofa (1969)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTMzOS9vcmlnaW5hbF9kNDBlZDRlZmEzNzYxY2Q2NGI3NTliY2U2NzU0MjJkZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Casa Canella (1971)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTM2My9vcmlnaW5hbF82NGFlYWFjMjVhOWRkZDliYjE4MGVmM2QzNjYxOWM3MC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Casa Canella (1971)"
+      }
+    ]
   },
   {
     "name": "Renaissance Revival",
@@ -2280,9 +2455,34 @@
     "startYear": "Early 1990s",
     "endYear": "Late 1990s",
     "decadeYear": "1990s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/bd358fb7e1764793a1cafd66fbc1a541.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ1OTIyMi9vcmlnaW5hbF8yNzkwMjdlM2I1ZTI0NmU4NzkxZGI5MWZhYTgwMGJjYS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "1990s and millennium ren faire, antique gothic, Shakespearean/Elizabethan, Mediaeval, Renaissance Greco-Roman art interpretation, magick, and faerie tale cultural revival. Most often mixed with obvious anachronisms. Runway shows inspired by Renaissance fashion; a reprinting of Shakespeare that utilizes Elizabethan style design elements; 90s/millennium formal attire with faerie tale inspiration.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ1OTIyMi9vcmlnaW5hbF8yNzkwMjdlM2I1ZTI0NmU4NzkxZGI5MWZhYTgwMGJjYS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Loreena McKennitt - The Book of Secrets (1997)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ1OTI5NS9vcmlnaW5hbF83MzA0ZTkxMjM4Mjc5YzQ5N2M3MGU1ZWFhZDMwZTMyYS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Loreena McKennitt - The Mask And Mirror (1994)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ1OTI5OC9vcmlnaW5hbF80YmYzOTNjYzE0Y2NjNzQyYzc3NmE4M2VhY2VmMzgwNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Lilith Fair (A Celebration Of Women In Music) (1998)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ1OTM1NS9vcmlnaW5hbF9hNTQxZDhmMWM2NTU4ODI1YWViMjljOGFmMGZhNTUxNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Sixpence None The Richer - Sixpence None The Richer (1997)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ1OTQ2MS9vcmlnaW5hbF9lOTI3YWUwODBmMWFlYjg0OTUxOGZiMTgxZWU2NDJmNS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Mediæval Bæbes - Worldes Blysse (1998)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ1OTQ2OS9vcmlnaW5hbF9hYmM0Yjk4NTQxODUxYWQwNTM5YjcxZWU5MzZiMTdkNS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Mediæval Bæbes - Worldes Blysse (1998)"
+      }
+    ]
   },
   {
     "name": "Silicon Dreams",
@@ -2290,9 +2490,34 @@
     "startYear": "Late 1980s",
     "endYear": "Late 1990s",
     "decadeYear": "1980s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/1ff09b72258e47d8ad8763668c871e5c.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzI3MC9vcmlnaW5hbF84ODQ0MjM0YmZiNmQxZGY5NTZjYWQyOGI4ZDY3NjBlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "The surrealist aesthetics of the early days of 3D animation.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzI3MC9vcmlnaW5hbF84ODQ0MjM0YmZiNmQxZGY5NTZjYWQyOGI4ZDY3NjBlYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "AMF BOSS Scoring System (2000)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzMyMS9vcmlnaW5hbF8yMWYwZjU1NDNjMjE2MDRkMTFiNjgwMDYwNThiYmU3ZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "The Mind's Eye (1990)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzM0OC9vcmlnaW5hbF82ZWQ2NTlmNDU5MTQ3ZTVkMTEzMzc1ZWFiYzNjMjhkYy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Beyond the Mind's Eye (1992)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzM3MS9vcmlnaW5hbF9mYTNlNDY0YmQ1MDcwODZhYTI0NzUwMmNjNGFkNTVjMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Computer Visions (1991)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzM5NC9vcmlnaW5hbF9jNDYzYTM2MmY4YWFlYjMwYTVmNzJkNDk4M2ViMDEyMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Computer Animation Classics (1997)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzQxNi9vcmlnaW5hbF9hNzAxZmI3YTQ1NTczNmIzZjQ2NzM0NzhjMGRjZTg4My5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Computer Animation Showcase (1997)"
+      }
+    ]
   },
   {
     "name": "Soft Colonial Wanderlust",
@@ -2300,9 +2525,34 @@
     "startYear": "Late 1980s",
     "endYear": "Mid 2010s",
     "decadeYear": "2000s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/18a1ec6be7084d749ada05b4a2650aee.png",
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTY2NS9vcmlnaW5hbF9hMzM3NzBlZTMyMDFiMGE5ZDdmNzEwZGZmZDJlNjU0Zi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
     "description": "",
-    "images": []
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTY2NS9vcmlnaW5hbF9hMzM3NzBlZTMyMDFiMGE5ZDdmNzEwZGZmZDJlNjU0Zi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Hendrick's Gin \"Escape\""
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTcwMS9vcmlnaW5hbF9mZmE2N2YzOWI3NDBkMTAwODg1Y2FkMDFiYmFkNmEyNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Hendrick's Gin \"Curiosity\""
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTcxNy9vcmlnaW5hbF9iMjJiZDZiYTcxOGI3YjFlMWFkZjliMTU2ZDQzMGQ3NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Arcade Fire - Funeral"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTc1Mi9vcmlnaW5hbF82ZWU2OTJkZGNiY2Y4N2E4OWYwNTdhN2I4MmVmMjI3Zi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Coraline"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTc2Mi9vcmlnaW5hbF9lOTczYjgyOTE0MThhMDIxODk3YjJkZDQ5NzI5NzU1OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Neutral Milk Hotel - In the Aeroplane Over the Sea"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTc4MC9vcmlnaW5hbF82OGVjZDM0Y2M2ZDNjNDk3ZTRiZWExZTg0NzU3NTIxNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Indigo Girls - Swamp Ophelia"
+      }
+    ]
   },
   {
     "name": "Sportsbrut",
@@ -2310,9 +2560,34 @@
     "startYear": "Late 2010s",
     "endYear": "Current",
     "decadeYear": "2010s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/4c2ba0a05f9c44baa62c71bc7b4defbd.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDE0My9vcmlnaW5hbF9kMjU0ZDdlY2IwZTkzNGI1MmExYzU4OWNhMDBkODU0NC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Brutalist, grungy, and powerful, Sportsbrut uses simple, coarse grids, high-impact typography and grunge elements to convey action, excitement, and energy.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDE0My9vcmlnaW5hbF9kMjU0ZDdlY2IwZTkzNGI1MmExYzU4OWNhMDBkODU0NC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "HORT for Nike (2016)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDE1OS9vcmlnaW5hbF9iZGM4YWVlNWUzZGNkZjBlN2ZjNGNlZWZkYTdhZmJlOC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "HORT for Nike (2018)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDE3MC9vcmlnaW5hbF9jNWRlZGY0YThlNzg0NDE2ODJkZWJiZjczN2I4MjRjNS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Depop Pop-up Event (2019)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDE4NC9vcmlnaW5hbF9kNzgwN2MwOGYxODA4Y2Y3MWNlNDMzMGMwMjRhOTg3OC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "NFL Graphics for ESPN (2019)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDIwMC9vcmlnaW5hbF81NTBhZDEwOTEwZjk1NzZiMzUxMWRhMjE1ZDc3NGIzZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Druk font (2014)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDIyMC9vcmlnaW5hbF85ZjYzOGFiMjQ0NjZkMTZkZDJiZDRkODExOWM5OGJkZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Sporting Grotesque (2017)"
+      }
+    ]
   },
   {
     "name": "Superflat Pop",
@@ -2320,9 +2595,34 @@
     "startYear": "Late 2000s",
     "endYear": "Early 2010s",
     "decadeYear": "2000s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/1fb19922ddb04830ad44249d86b77d0d.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxMjEzOC9vcmlnaW5hbF9lMWU0MzljOTU5YmVhNjEzNzQ0Y2QxN2ViODQ4NGE0OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "The commercial side to Japan's Superflat art movement, with artists like Takashi Murakami's bright and poppy graphics influencing fashion design, motion graphics, and in animation.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxMjEzOC9vcmlnaW5hbF9lMWU0MzljOTU5YmVhNjEzNzQ0Y2QxN2ViODQ4NGE0OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Takashi Murakami For Louis Vuitton - Superflat First Love (2009)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxMjE4Ni9vcmlnaW5hbF80OTZiZGRlNDQ5ZmVjZmM3NzAzYTJkYTJkMjhkNjQyOC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Kanye West- Graduation (2007)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxMzY2MS9vcmlnaW5hbF8yM2IyNDU2NGEzNWY1YTZhZTU4YmJmZWU1NTM2MWUyMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Kuuchuu Buranko (2009)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxMzcwMS9vcmlnaW5hbF9lZWIxZTRiYjk3MjI5NzZiZGNiNWEwM2RmNWJiN2JmNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Björk – Voltaïc (2009)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxMzc2OC9vcmlnaW5hbF8xMGFkNWNiYTA4NGM4YmY2ZmRmMmI4MTg3MDAzNTM2OS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Olo Yogurt Studio (2013)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxMzc3Mi9vcmlnaW5hbF85ZjFiMTVmMzA2YjY2ZDQ1M2VjYjJlODE5NTFmYmZhMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "CMYK Wall Art (2010)"
+      }
+    ]
   },
   {
     "name": "Supergraphic Ultramodern",
@@ -2330,9 +2630,34 @@
     "startYear": "Late 1960s",
     "endYear": "Late 1970s",
     "decadeYear": "1970s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/88e53769f8fb483d8db86b7f17277a13.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ1NDY2NS9vcmlnaW5hbF9iOTM2YzlhYzhmOGZjMTM2ZjI1MmJmYjRhNTY0NzIyNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Plastics, curves, plush materials, rainbows, inflatables, shiny metals, fibreglass, prefab everything, supergraphics galore, pleasure furniture, Helvetica, icons. This style was a huge influence on Y2K aesthetic in the 1990s.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ1NDY2NS9vcmlnaW5hbF9iOTM2YzlhYzhmOGZjMTM2ZjI1MmJmYjRhNTY0NzIyNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Visiona II (1970)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ1NDY2Ni9vcmlnaW5hbF9lNDhkNWE0ZDUwNmRkNzFkMGRhYjZmMjQ1NWYxMzliOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Visiona II (1970)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ1NDY2OS9vcmlnaW5hbF85ZDMwNzg3ODFkMzIxYTY4OTM4NGI3N2EyMjk3YjdkNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Visiona II (1970)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ1NDgyMS9vcmlnaW5hbF85ODgwZDNmOWUxNjM5YzEyYWIxZmIzZGFhY2EyYjYyNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Private House at Binningen (1972)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ1NDgyMi9vcmlnaW5hbF9mYmVkNjFmYjEyZGUwZWFlYmQ0NGY0MWFjZmQ3ZGYxYS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Private House at Binningen (1972)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ1NDgyMy9vcmlnaW5hbF83N2ZlNzU4ZjRhOTJlNmZiNDY1M2Y5ZmViNmRmYTFkZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Private House at Binningen (1972)"
+      }
+    ]
   },
   {
     "name": "Synthwave",
@@ -2340,9 +2665,34 @@
     "startYear": "Early 2010s",
     "endYear": "Current",
     "decadeYear": "2010s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/8ca58dbe7a9f4bc581be056e27f1005f.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ0OTE5Ni9vcmlnaW5hbF9jMmIwMTlmOGM1ODg0MjJmZmRlZmVlYTkyYmRkY2E2Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "The tongue-in-cheek oversaturated 1980s-revival aesthetic also sometimes called \"Outrun\" or \"Retrowave\". Heavy use of neon colors, airbrush-style imagery and laser grids.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ0OTE5Ni9vcmlnaW5hbF9jMmIwMTlmOGM1ODg0MjJmZmRlZmVlYTkyYmRkY2E2Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Hotline Miami (2012)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ0OTIwNC9vcmlnaW5hbF8zZmJiZjc4NGY3YTUwZmJkNGM2OTBiN2FmMzlmNzkyZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Muse - Simulation Theory (2018)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ0OTIxMC9vcmlnaW5hbF9mYmM1N2QwYTI4ZTBhNjVhNzkzNjQ5ZDZmNDg4NjBjZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "PhotoFunia - Retro Wave text generator (2016)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ0OTIzNy9vcmlnaW5hbF9jMzEwNThjOWFmYmNiMDVjNDQwZGEyYmQ5ZDYwZDJkMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Kavinsky ‎– Nightcall (2010)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ0OTI1Ny9vcmlnaW5hbF85Y2NmNDYyMzE5ODU5MjRkYzQzMDIzMTNkZmY4NmZlNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Drive- Alternate poster (2011)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQ0OTI2NC9vcmlnaW5hbF9kYzY4ZDkyMmY1MTA5ZmYxZWU5ZGUyNzJlNmJmZDc1YS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Tupperware Remix Party- The Device EP (2012)"
+      }
+    ]
   },
   {
     "name": "Teenpunk",
@@ -2350,9 +2700,34 @@
     "startYear": "Late 1990s",
     "endYear": "Early 2010s",
     "decadeYear": "2000s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/4dcc48c4b41f42f69db45cdea705424c.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDY1MS9vcmlnaW5hbF9jYzAzMzhlNzdkZWNlNWYwYWFiYmIyMGRmNjVjYTY3ZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "The millennial and gen-Z iteration of edgy grunge aesthetics, associated closely with \"pop punk\" and the store Hot Topic.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDY1MS9vcmlnaW5hbF9jYzAzMzhlNzdkZWNlNWYwYWFiYmIyMGRmNjVjYTY3ZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Lindsay Lohan – Speak (2005)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDY3Mi9vcmlnaW5hbF81YjlhYmZlYmE4YWI0NzllN2ZiMWE0MWVhYjA4NGRmNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "The Veronicas - \"4ever\" Official Music Video (2005)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDY5NC9vcmlnaW5hbF8zYjkyZGVmNDg3YjA1Y2I3ZTI3Mjk5YmNiNWZiN2ZlOS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Avril Lavigne – The Best Damn Thing (2007)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDcyMS9vcmlnaW5hbF8xMDVhMzJiZjcwZDMxZGJiY2MxYmYyZWI4Y2FlMDM5Zi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Ashlee Simpson – Autobiography (2004)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDc1OC9vcmlnaW5hbF9mYTcyOTM0NzEwYzgxMmMxMjNmYjNmYWRhOTFhNDM0OC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Freaky Friday (2003)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDAwMDc3NC9vcmlnaW5hbF9hNmFiNDkxNWM3MTgxOGQwM2NlZTU0NWQzMTQzNDFiNS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "blink-182 – blink-182 (2003)"
+      }
+    ]
   },
   {
     "name": "Themed Spaces",
@@ -2370,9 +2745,34 @@
     "startYear": "Late 1990s",
     "endYear": "Mid 2000s",
     "decadeYear": "2000s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/34384b83c48a47509354326a2c9ddbbd.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU5OTA4Ny9vcmlnaW5hbF82N2IxMzdjZDg4ZmY2OGFiNTBmMjg4YzMwODA5ZDFkMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Very late 90s - early 2000s revival of Supergraphic Ultramodern. Supergraphics, bright color palettes, and sleek forms mix with Millennium Disco kitsch, evolving from the Gen-X Soft Club nostalgia for the 1970s.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU5OTA4Ny9vcmlnaW5hbF82N2IxMzdjZDg4ZmY2OGFiNTBmMjg4YzMwODA5ZDFkMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Groove Sanctuary – Various (2002)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU5OTA4OS9vcmlnaW5hbF9jM2RmZTdhYzc2NzRjMzBhNjE4NTE1M2JiNGViMjEyZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Yoshinori Sunahara – Pan Am The Sound of ‘70s (1998/1999)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU5OTA5MS9vcmlnaW5hbF9iYmM3MTRlNjc2NWQ1N2Y5OTI3ZWNmZTdhZDMwZDI4Yy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Pizzicato Five ‎– The Fifth Release From Matador (2000)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU5OTA5My9vcmlnaW5hbF82ZGRiYWRjZWUxNDgzYTNjNDhiZmQwOWEyODc0NmI1My5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Pizzicato Five – Expo 2001 (1993)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU5OTA5Ni9vcmlnaW5hbF82MjVmMTJjMjE3OTEzNmY4YmYwMDYzNzM3ZTFiYjNjYS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Cornelius – FM - Fantasma Remixes (1999)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU5OTA5Ny9vcmlnaW5hbF9hMGRiZjZkMDQ0ZDMxNzM0ZWNlYWUzNjU3ZjA4ZWZiMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Pulp ‎– Intro, The Gift Recordings (1993)"
+      }
+    ]
   },
   {
     "name": "UrBling",
@@ -2380,9 +2780,34 @@
     "startYear": "Early 2000s",
     "endYear": "Late 2000s",
     "decadeYear": "2000s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/f4af256b216b4adb9870c8fd1bc7b6a7.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTI1MS9vcmlnaW5hbF8zNWIyMjAwMTFmYjdmYzU4YzJmNGI4NDU1MWUzMWQ2Mi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Urban-McBling' but not as heavy with the Bling aspect, though similar in the maximalism, visual excess, and some influences. Silhouetted streetlights, power lines, buildings, highways, grungy effects, wings, crests, flames, tribal tattoo-looking motifs, paint splatters/drips, and sepia toned/reds yellows orange. Blacks and Greys, slab san-serifs, graffiti and stencil motifs & fonts, gothic fonts. Motifs derived from 'Kustom Kulture' also seem to play a part in this style. Tied the relatively strict gender roles in marketing and wider culture at the time, as this could be seen as the 'masculinized' version of McBling.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTI1MS9vcmlnaW5hbF8zNWIyMjAwMTFmYjdmYzU4YzJmNGI4NDU1MWUzMWQ2Mi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Sean Paul - \"The Trinity\" Album Art (2006)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTI3My9vcmlnaW5hbF9hZDlhOTNmNWFlY2Y5ZDA4NzUzNDY5Yjc0ZjE0MWVjOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Sony PSP Squirrels \"Hells Yeah\" Ad Campaign (Year Unknown)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTI5Ni9vcmlnaW5hbF8yNmYxNjU0ZmIwZjEwODYxNWE5NmQzYzZiMDZkZjczZi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Tony Thomas ‎- \"21st Century Dub\" Album Art (2003)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTMzMC9vcmlnaW5hbF81MzM4Nzc2YzhjZWZiNDhiYWRiYThlOTczMjk3YTY2OC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Universal Studios Florida \"Hollywood Rip Ride Rockit\" Concept Sketch (2009)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTM1MS9vcmlnaW5hbF84YjBmM2I4YWMxYTQ5ZTI5MzM5MzdjMDQ0ZjU1NTk2MC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "EA Criterion Games \"Burnout Paradise\" Main Menu (2009)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQ5MTM2OS9vcmlnaW5hbF8zNjQ1MzQ2NDcxMDBlNjM4MzkwMDA5YzhiNWIzNGU2Ni5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Criterion Games \"Burnout Paradise\" Intro Cutscene (2009)"
+      }
+    ]
   },
   {
     "name": "Utopian Scholastic",
@@ -2390,9 +2815,34 @@
     "startYear": "Late 1980s",
     "endYear": "Late 1990s",
     "decadeYear": "1990s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/2a4d2ca726f042adbe7db95bd8d33875.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzAyMTU2Ni9vcmlnaW5hbF8zYWIwOWQzM2Y5OTI0ODk1YzA3M2E1NmY1YWVkZWVlYy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "In some ways this aesthetic is the 'kids version' of Frasurbane, with an emphasis on scholastic endeavors, 'edutainment', and an 'end-of-history' approach to learning. It uses the same classical and 'timeless' typography and imagery with Frasurbane, adding in the aesthetic of 'stock photography collage' depicting the most basic and identifiable depictions of forms and concepts for quick comprehension. This reliance on this style of collage is predicated on two factors in the era; the proliferation of stock photography collections, and the development of desktop publishing & graphics-editing software in the 1980s.\n\nNote: The term 'Utopian Scholastic', was derived from the Facebook group of it's origin, 'Utopian Scholastic Designs from a pre-9/11 World', created by Suze Huldt. Some images shown here are sourced & curated from that group, and some are CARI member scans & finds.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzAyMTU2Ni9vcmlnaW5hbF8zYWIwOWQzM2Y5OTI0ODk1YzA3M2E1NmY1YWVkZWVlYy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Millennium Dome Cross-section (2000)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzAyMTU4MS9vcmlnaW5hbF9hODFhNjQ5ZDYyODkwNGM2NTQyYjg1YTlhOGM5Y2FkOS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "DK Eyewitness VHS tapes (1994)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzAyMTYwNy9vcmlnaW5hbF84N2QzZjhjZGU4Y2YxNDkyMmFhMjc5ZjFjNDRjMjUzMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Myst (1993)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzAyMTYxMi9vcmlnaW5hbF9iZDdlOGYxNmNmOTQ4NTY4OTJlODQ2ZTBhNWZhMjMyYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Hatris (1992)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzAyNzc1OS9vcmlnaW5hbF8wNzA5YTUzYTkwMmFmNmQyMjc4YzJlYmQ5NTNmZWE1Ni5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Microsoft Home- Musical Instruments (1994)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzAyNzgwMy9vcmlnaW5hbF82NDg1NjUxYzVhNTU5ZDFmOTM4Yzk4YjRiYjE3ZTNkNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Chronicle Books Installation (1992)"
+      }
+    ]
   },
   {
     "name": "Vaporwave",
@@ -2400,9 +2850,34 @@
     "startYear": "Early 2010s",
     "endYear": "Late 2010s",
     "decadeYear": "2010s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/76948270bb5344a79af6f48f21f32660.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0Nzc2MS9vcmlnaW5hbF81MzI3ZjlmOTg0OTUxNDI0YTlhYTYyMjc1YTYyNDg0ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "The post-internet movement, closely tied with the music genre, of 1980s and '90s nostalgia warped by postmodern irony.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0Nzc2MS9vcmlnaW5hbF81MzI3ZjlmOTg0OTUxNDI0YTlhYTYyMjc1YTYyNDg0ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "FLOOR BABA- It Dont Make Sense (2016)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0Nzc3MC9vcmlnaW5hbF84OWUwYWRiN2EwYTFkNzJhMjg0ZTI1NTE0ODJkZWI3MC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Macintosh Plus – Floral Shoppe (2011)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0Nzc4OC9vcmlnaW5hbF8yNGMyYWJmMDA2NjI5ZWE3NWIzOWVkOGE3MmExYTYzYy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "I am my MTV (2015)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzgxNi9vcmlnaW5hbF84Njc4YWEwMWMyZTgxNDQ2ZjhlZTEwMWEwYWI3Y2U3YS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Louis Vuitton London (2019)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0NzgzMS9vcmlnaW5hbF85YjNiNTQ1NTYxOGU2ODVhNWU5YzU0ZTljMDlmODhjMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Alex Israel at the Huntington Library (2015-2016)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMjE0Nzk1Ny9vcmlnaW5hbF85OTMyZTI3OWRlMGEwOTE5OTk0MjgzMjI4ZjNkMjQ1MC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Windows96 - One Hundred Mornings (2018)"
+      }
+    ]
   },
   {
     "name": "Vector Minimalism",
@@ -2410,9 +2885,34 @@
     "startYear": "Early 2010s",
     "endYear": "Late 2010s",
     "decadeYear": "2010s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/f58aab744e8d4fe4bfd1387997819f66.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDc0Mi9vcmlnaW5hbF8wMWNmZDZiOWE2ZDRiZDc3Y2Y3NGI1OTgzODYwYzFjZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "This was a minimalistic, quietish era, defined by the decrease in Skeumorphism of this era towards a \"flat\" aesthetic that in manys was heavily referential of Mid-Century Modernism. It started in 2012, became the dominant aesthetic of silicon valley in mid-2013, and faded out to some extent by the late 2010s. Examples: \"Flat\" anything; paring down the naturalistic tendencies of Hipness Purgatory and replacing them with an angularity that both recalls Mid-century designs and anticipates developments in Bougie Design Aesthetics; iOS 7; geometric sans serif fonts, particularly combined with Bodoni or Didot-esque bold serif display fonts (common 2015-present)",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDc0Mi9vcmlnaW5hbF8wMWNmZDZiOWE2ZDRiZDc3Y2Y3NGI1OTgzODYwYzFjZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Coconut Bliss Rebrand, 2021"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDc2NC9vcmlnaW5hbF9hOTkzNjgwNTEwNjM2NjUyZTQyODhiZGVkYzI4MjQ3Yi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Minded Website, 2020"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDc5Ni9vcmlnaW5hbF9kOGQ0NWQ3YTc0MWRjZmI1YzA1ZDM5MzI3ZDVjZTZiYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "'Hessian' For-Sale Brand, 2013"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDg2NC9vcmlnaW5hbF8xYWFiNmJlMzlhNTNlMzBkMGUwNDQxZTYxMDljMjVkZi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Mozilla Rebrand, 2017"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDkwNC9vcmlnaW5hbF84YzY5MWZlMTFlNmZjOTE3YjE5MjI5ZTAyMTYyMGQ2ZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Google Chrome Rebrand, 2014"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDkzNS9vcmlnaW5hbF9lNGVhYjg3MzVkZTA5Y2IzMzY4MTU5Y2ZjNGY5NWM4ZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Microsoft Rebrand, 2012"
+      }
+    ]
   },
   {
     "name": "Vectorheart",
@@ -2420,9 +2920,34 @@
     "startYear": "Late 1990s",
     "endYear": "Mid 2000s",
     "decadeYear": "2000s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/f969840729af44c8b80c7c7b8e675911.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA3OTM0MC9vcmlnaW5hbF9kOGUzNjg5MmZlNjY5ZWU1NDI4YzlmOTkzNzQyN2IyMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Pioneered by firms like Bionic Systems and The Designers' Republic, vectorheart embodies the blazing speed of y2k attitudes with futuristic forms and high-contrast typography that borrows from both Swiss modernism and utilitarian industrial design.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA3OTM0MC9vcmlnaW5hbF9kOGUzNjg5MmZlNjY5ZWU1NDI4YzlmOTkzNzQyN2IyMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "\"My Red Hot Car\" for Squarepusher (2001)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA3OTM1Ny9vcmlnaW5hbF9kNzQzM2I3MjY3MzU4N2IzY2FhYTg3YmQ5MmNhMTI1YS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Teebee - Through the Eyes of A Scorpion (2001)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA3OTM2NC9vcmlnaW5hbF8wNjkyODFlYmEyMTNkOWE2ZjE5MzU5N2E2NmJjMmM3ZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Chapter3 Website (2000)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA3OTQyMS9vcmlnaW5hbF81MjBjMjAxNDc3NDBjYzY3MDQzNmY5MDM4MDE3ZDU0ZS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Art Of Speed / Nike (2009)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA3OTQ1MS9vcmlnaW5hbF9jMjZjNjY1NjczMjM3M2NhMjkwYjBiZGMyZTNiZTdhZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "pLot Design flash intro (2004)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA3OTQ3MC9vcmlnaW5hbF8zZTIyN2YwNWI5YWNlNTExMjRlNGMzZmQzMzAyYjU0Yy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "T.26 Digital Type Foundry website (2001)"
+      }
+    ]
   },
   {
     "name": "Wacky Pomo",
@@ -2430,9 +2955,34 @@
     "startYear": "Early 1990s",
     "endYear": "Early 2000s",
     "decadeYear": "1990s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/ebb48f54f0044fc88ce3c998e70bc2b8.png",
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQwNzE1MS9vcmlnaW5hbF9kMjM0MGM1YzZkM2UzMmIzNWM5Mzg1ZWU5NDEwMjA4OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
     "description": "",
-    "images": []
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQwNzE1MS9vcmlnaW5hbF9kMjM0MGM1YzZkM2UzMmIzNWM5Mzg1ZWU5NDEwMjA4OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Bright Child activity centre - Santa Monica, CA (1998)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQwNzE0NC9vcmlnaW5hbF9jNjU0ZmIwNGNiYjIzYmYwMmIxZDAzMTMwNWM2MDBhZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Bright Child activity centre - Santa Monica, CA (1998)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQwNzE0OS9vcmlnaW5hbF9lOWE3NmFhMzkyODZjYzQyMzRlNGEzMDBlNGI4MjkzNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Bright Child activity centre - Santa Monica, CA (1998)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDMyNS9vcmlnaW5hbF9jZTg2YmM4MTY5NTRhN2E3ZGM3M2RkNGM1YWI0ODA5YS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Katy Mills Mall (1999)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDQ0OC9vcmlnaW5hbF8zMmMxNWJiNmU2NDhmYzMxMjQxOTRmNWMwNDA1M2Q5Mi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Build-A-Bear Workshop (1997)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzQxNDUwMi9vcmlnaW5hbF8zZTNlZDMzNjg2NDhlMTdiY2I4YmFhMTdiZmFkNjY2Ni5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Twisted: The Game Show (1993)"
+      }
+    ]
   },
   {
     "name": "Whimsicraft",
@@ -2440,9 +2990,34 @@
     "startYear": "Mid 1980s",
     "endYear": "Mid 1990s",
     "decadeYear": "1980s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/83f68894fcfe420cbd618f5fb374746f.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQwNzkyOS9vcmlnaW5hbF8wZmUwM2Y3MDQ2N2RiYjgwMzEyOWFmOWFlZDhmYTc2MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Part of the folk art and furniture revival of the 1980s, along with a new interest in collage, craft, repurposing industrial/found objects. It's part of the 'down to earth', folksy, colorful 'art fair' atmosphere of the time period. Formerly called 'DIY Handmade Folk Artsy 80s-90s', renamed in Sept 2021.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQwNzkyOS9vcmlnaW5hbF8wZmUwM2Y3MDQ2N2RiYjgwMzEyOWFmOWFlZDhmYTc2MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Various Works by Tina Zanetti (1994)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQwNzk1MS9vcmlnaW5hbF8yOGZjZjIzOGZhNGE0NmQ4MzJjMGEwNGQxYmNkNjM2ZC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Toad The Wet Sprocket ‎- \"Fear\" Album Art (1991)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQwODAyMy9vcmlnaW5hbF9hYWRhMWVlYjliZmM2YjYyZDZmMTM0M2FmYzIwNzAzOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Out Of The Box (Opening Theme Song) (1998)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQwODA2NS9vcmlnaW5hbF9lZjJiNDFjMDM2NzgxZDI5ZTY3MTE4Yzg0OWFiNGJmZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Stomp Out Loud (Opening Scene) (1997)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQwODExOS9vcmlnaW5hbF84NzUwZTI3ZWI3ZjcwZDA5NDI3ZTJlZGNiOGE0NWJjYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Harriet the Spy - Windchime Garden Clip (1996)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDQyODY5Ny9vcmlnaW5hbF9iY2YxZjA3MWEyODQyNGUxZjlkZTRmMzllMjFmYWY5NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Crashbox (Opening Theme Song) (1999)"
+      }
+    ]
   },
   {
     "name": "Whimsigothic",
@@ -2450,9 +3025,34 @@
     "startYear": "Late 1980s",
     "endYear": "Late 1990s",
     "decadeYear": "1990s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/7d2f9b86b6ab4279b5296adb9ba5f253.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA5MDgwNy9vcmlnaW5hbF9lMjE4MGQ2YzI0ZDI3NmI1MzA1NDcwOWJhNDUxYmFkNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "This aesthetic was contemporaneous with the peak popularity of gothic-inspired pop/rock music, Tim Burton, and the graphic design work of Margo Chase, Vrontikis, and a bit of Vaughan Oliver. Very popular in the fields of furniture, product, and interior design. Note: This aesthetic was originally titled 'Whimsical Mystical Gothic Celestial'. ",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA5MDgwNy9vcmlnaW5hbF9lMjE4MGQ2YzI0ZDI3NmI1MzA1NDcwOWJhNDUxYmFkNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Candle Sculpture (1986)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzA5MDgwOC9vcmlnaW5hbF9kMjliMzJmZWJiYjNkNWFhNDM3MjkxY2RlNDVhZDQxZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Candle Sculpture (1986)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzIwNjQyMi9vcmlnaW5hbF9lNTZlMGJhYzJiNDg1ZDViYzljOWQzZmViOTNjZDQxOC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Paula Abdul- Spellbound (1991)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzIwNjQzNi9vcmlnaW5hbF8wZWEyZmJjMTliZGUyNjYzOWRhZTkwYjcxYTJmZDJjZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Shakespears Sister - Stay (1992)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzIwNjQ0My9vcmlnaW5hbF9mMTUyZTRlNDhmMTdjNjRkOGRmMjQ5ZmU1YzhjMDI3Zi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Logos by Margo Chase (1986 onwards)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzIwNjQ3Mi9vcmlnaW5hbF8yOTcyMWI2NTFkMDIxOTI1NTQ4ZjY5MTZiNGU5ZDJiZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Kruella font (1996)"
+      }
+    ]
   },
   {
     "name": "Y2K Aesthetic",
@@ -2460,9 +3060,34 @@
     "startYear": "Early 1990s",
     "endYear": "Late 1990s",
     "decadeYear": "1990s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/fb7c1b7f05f446a2bae6d87c164fba7d.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDUwMDA3Ny9vcmlnaW5hbF84N2ZjMWFhYzk1ODBkZWNlODAyYTA5OTYzMTMwODcxZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "A time when the future was tight leather pants, silver eyeshadow, shiny clothing, oakleys, gradients, and blobby electronics. Also known as 'Y2K Futurism'",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDUwMDA3Ny9vcmlnaW5hbF84N2ZjMWFhYzk1ODBkZWNlODAyYTA5OTYzMTMwODcxZC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Emigre #29 (1994)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDUwMDA5OC9vcmlnaW5hbF8zYjRjODk2NDY3NjUzYTlmZjYxNjUzZGMyNDA0Y2U3NC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Nokia One2One ad (1999)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDUwMDEwNC9vcmlnaW5hbF8wMjRjMzcxODQ1Yjg1MjhkOTZmZmVkNWQ2N2Q1Y2NmYi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Bed Supperclub (2002)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDUwMDEwNS9vcmlnaW5hbF9jMTAyODA5NDExNWFjM2FlNzFhY2JkMWQ4MWQ4NTUwNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Björk – Hyperballad (1995)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDUwMDEwOC9vcmlnaW5hbF8wMzFiMjU4N2I2NmU4NTllYzcyN2EwYjkxNzU0Mzg3OC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Basic Pleasure Model ‎- Sunyata (2003)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNDUwMDExMC9vcmlnaW5hbF8zMGIyYjE3NzAyNjk3MGNhMWZjOTc1OTBhNDgzYTVlMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Wave UFO (1999)"
+      }
+    ]
   },
   {
     "name": "Zen-X",
@@ -2470,8 +3095,33 @@
     "startYear": "Early 1990s",
     "endYear": "Early 2000s",
     "decadeYear": "1990s",
-    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/9c8264604c30441382c55d700f5cd163.png",
-    "description": "",
-    "images": []
+    "displayImageUrl": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU1NzU2OS9vcmlnaW5hbF9kYzhmNDhkMGEzYTM1ODI1OGM0NDg2OTgwMTczMzA4Zi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+    "description": "Popular with Gen-X and some Baby Boomers; this aesthetic emerged in the early 1990s, part of the 'natural-organic' shift away from 1980s excess and a resurgent wave of environmentalism (eg. Sting in the rainforest, the corporate eco-responsibility trend made famous by companies like The Body Shop, the Nature Company, etc.). This was combined with a trend towards minimalism and renewed interest in Japanese architecture and design concepts.",
+    "images": [
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU1NzU2OS9vcmlnaW5hbF9kYzhmNDhkMGEzYTM1ODI1OGM0NDg2OTgwMTczMzA4Zi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Bamboo @ Pechanga Resort and Casino (2011)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU1NzczMi9vcmlnaW5hbF8wOTU3YjkxYTZiODJhMmJkNjAyNGNjMTEwNDNhNjRmYy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Melanie C - Never Be The Same Again (2000)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU4MDM5MC9vcmlnaW5hbF81ZDMzNDM2MDdhNTY1MDQ0ZTJhN2Y3NjZiNmMxNTI4Yi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Anggun - A Rose In the wind (1998)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU4MDU2MC9vcmlnaW5hbF83OWJiZDc2YzRhM2U4MTAwYTIyMDczMWM3NzNiN2E3MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Dido - Here with Me (2000)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU4MDcyOC9vcmlnaW5hbF9hMGQ5YTE0ZWY2ZjdiZDc1ZDMxYWQxZDdjMDVlMzJkNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Set from One Hour Photo (2002)"
+      },
+      {
+        "url": "https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxMzU4MDc1Mi9vcmlnaW5hbF9kYTJmNDg2NWQ1NjVjZGVlNGUxNDBiY2VjNTE2YjMwNi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyMDAsImhlaWdodCI6MTIwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfSwid2VicCI6eyJxdWFsaXR5Ijo3NX0sImpwZWciOnsicXVhbGl0eSI6NzV9LCJyb3RhdGUiOm51bGx9fQ==?bc=0",
+        "title": "Jana – Stairway To Heaven (2002)"
+      }
+    ]
   }
 ]
