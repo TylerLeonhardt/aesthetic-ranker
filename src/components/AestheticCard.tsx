@@ -4,20 +4,23 @@ import type { Aesthetic } from '../types';
 interface AestheticCardProps {
   aesthetic: Aesthetic;
   className?: string;
+  onInfoTap?: () => void;
 }
 
 export default function AestheticCard({
   aesthetic,
   className = '',
+  onInfoTap,
 }: AestheticCardProps) {
   // Key forces remount on aesthetic change, resetting all state naturally
-  return <AestheticCardInner key={aesthetic.urlSlug} aesthetic={aesthetic} className={className} />;
+  return <AestheticCardInner key={aesthetic.urlSlug} aesthetic={aesthetic} className={className} onInfoTap={onInfoTap} />;
 }
 
 function AestheticCardInner({
   aesthetic,
   className,
-}: { aesthetic: Aesthetic; className: string }) {
+  onInfoTap,
+}: { aesthetic: Aesthetic; className: string; onInfoTap?: () => void }) {
   const images = aesthetic.images?.length
     ? aesthetic.images
     : [{ url: aesthetic.displayImageUrl, title: aesthetic.name }];
@@ -58,6 +61,19 @@ function AestheticCardInner({
     <div className={`relative overflow-hidden rounded-2xl bg-slate-800 ${className}`}>
       {/* Image — aspect-ratio defines card height */}
       <div className="relative aspect-[3/4] w-full overflow-hidden">
+        {/* Info button */}
+        {onInfoTap && (
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); onInfoTap(); }}
+            onPointerDown={(e) => e.stopPropagation()}
+            onPointerUp={(e) => e.stopPropagation()}
+            className="absolute right-2 top-2 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition-colors hover:bg-black/70 active:bg-black/80"
+            aria-label={`Details for ${aesthetic.name}`}
+          >
+            <span className="text-base" aria-hidden="true">ℹ️</span>
+          </button>
+        )}
         <img
           key={currentIndex}
           src={currentImage.url}

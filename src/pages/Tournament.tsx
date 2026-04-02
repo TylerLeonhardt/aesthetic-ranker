@@ -69,13 +69,12 @@ export default function Tournament() {
             onSwipeRight={() => bucketCurrent('like')}
             onSwipeLeft={() => bucketCurrent('nope')}
             onSwipeUp={() => bucketCurrent('meh')}
-            onTap={() => setDetailAesthetic(currentAesthetic)}
             leftHint="👎 Nope"
             rightHint="👍 Like"
             upHint="😐 Meh"
           >
             <div key={currentAesthetic.urlSlug} className="animate-fade-in w-full max-w-sm mx-auto">
-              <AestheticCard aesthetic={currentAesthetic} className="w-full" />
+              <AestheticCard aesthetic={currentAesthetic} className="w-full" onInfoTap={() => setDetailAesthetic(currentAesthetic)} />
             </div>
           </SwipeContainer>
         </div>
@@ -158,7 +157,7 @@ export default function Tournament() {
               onClick={() => recordComparison('better')}
               className="flex-1 min-w-0 cursor-pointer rounded-2xl ring-2 ring-transparent transition-all duration-200 hover:ring-indigo-400 focus:outline-none focus:ring-indigo-400 active:scale-[0.98]"
             >
-              <AestheticCard aesthetic={newItem} className="w-full" />
+              <AestheticCard aesthetic={newItem} className="w-full" onInfoTap={() => setDetailAesthetic(newItem)} />
             </button>
 
             <div className="flex flex-col items-center justify-center shrink-0">
@@ -172,7 +171,7 @@ export default function Tournament() {
               onClick={() => recordComparison('worse')}
               className="flex-1 min-w-0 cursor-pointer rounded-2xl ring-2 ring-transparent transition-all duration-200 hover:ring-indigo-400 focus:outline-none focus:ring-indigo-400 active:scale-[0.98]"
             >
-              <AestheticCard aesthetic={existingItem} className="w-full" />
+              <AestheticCard aesthetic={existingItem} className="w-full" onInfoTap={() => setDetailAesthetic(existingItem)} />
             </button>
           </div>
 
