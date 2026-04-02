@@ -55,7 +55,50 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
   const cardRef = useRef<HTMLDivElement>(null);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [localImages, setLocalImages] = useState<Map<string, string>>(new Map());
+  const [imagesReady, setImagesReady] = useState(false);
   const savingRef = useRef(false);
+
+  // Pre-fetch images as blob URLs to avoid iOS Safari CORS cache tainting
+  useEffect(() => {
+    let cancelled = false;
+    let blobUrls: string[] = [];
+
+    const urls = [
+      ...new Set(
+        topThree.map((a) => a.images?.[0]?.url || a.displayImageUrl),
+      ),
+    ].filter(Boolean);
+
+    async function prefetch() {
+      const entries = await Promise.all(
+        urls.map(async (url) => {
+          try {
+            const res = await fetch(url);
+            const blob = await res.blob();
+            const blobUrl = URL.createObjectURL(blob);
+            blobUrls.push(blobUrl);
+            return [url, blobUrl] as const;
+          } catch {
+            return [url, url] as const; // fallback to original URL
+          }
+        }),
+      );
+      if (!cancelled) {
+        setLocalImages(new Map(entries));
+        setImagesReady(true);
+      } else {
+        blobUrls.forEach((u) => URL.revokeObjectURL(u));
+      }
+    }
+
+    prefetch();
+    return () => {
+      cancelled = true;
+      blobUrls.forEach((u) => URL.revokeObjectURL(u));
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [topThree]);
 
   const handleSaveImage = useCallback(async () => {
     if (!cardRef.current || savingRef.current) return;
@@ -166,9 +209,8 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
             </div>
             <div className="h-36 w-full overflow-hidden rounded-xl bg-slate-700">
               <img
-                src={heroImages[0].url}
+                src={localImages.get(heroImages[0].url) || heroImages[0].url}
                 alt={topThree[0].name}
-                crossOrigin="anonymous"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -186,9 +228,8 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
                 </div>
                 <div className="h-24 w-full overflow-hidden rounded-lg bg-slate-700">
                   <img
-                    src={heroImages[i + 1].url}
+                    src={localImages.get(heroImages[i + 1].url) || heroImages[i + 1].url}
                     alt={aesthetic.name}
-                    crossOrigin="anonymous"
                     className="h-full w-full object-cover"
                   />
                 </div>
@@ -241,11 +282,16 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
         <button
           type="button"
           onClick={handleSaveImage}
-          disabled={saving}
+          disabled={saving || !imagesReady}
           className="mt-3 flex w-full min-h-[44px] items-center justify-center gap-2 rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
           aria-label="Save image"
         >
-          {saving ? (
+          {!imagesReady ? (
+            <>
+              <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
+              Loading…
+            </>
+          ) : saving ? (
             <>
               <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
               Saving…
