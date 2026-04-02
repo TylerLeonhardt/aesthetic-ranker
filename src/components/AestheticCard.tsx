@@ -33,6 +33,7 @@ function AestheticCardInner({
   const [loaded, setLoaded] = useState<Record<number, boolean>>({});
   const [errored, setErrored] = useState<Record<number, boolean>>({});
   const interactionPause = useRef(false);
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
 
   // Auto-advance every 4s
   useEffect(() => {
@@ -56,6 +57,28 @@ function AestheticCardInner({
     goToImage(idx);
   }, [goToImage]);
 
+  const SWIPE_THRESHOLD = 50;
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (!touchStart.current || !hasMultiple) return;
+    const deltaX = e.changedTouches[0].clientX - touchStart.current.x;
+    const deltaY = e.changedTouches[0].clientY - touchStart.current.y;
+    touchStart.current = null;
+    const absDx = Math.abs(deltaX);
+    const absDy = Math.abs(deltaY);
+    // Only trigger when horizontal movement dominates and exceeds threshold
+    if (absDx <= absDy || absDx < SWIPE_THRESHOLD) return;
+    // Swipe left (negative delta) → next; swipe right (positive) → previous
+    const nextIndex = deltaX < 0
+      ? (currentIndex + 1) % images.length
+      : (currentIndex - 1 + images.length) % images.length;
+    goToImage(nextIndex);
+  }, [hasMultiple, currentIndex, images.length, goToImage]);
+
   const currentImage = images[currentIndex];
   const isLoaded = loaded[currentIndex];
   const isErrored = errored[currentIndex];
@@ -63,7 +86,11 @@ function AestheticCardInner({
   return (
     <div className={`relative overflow-hidden rounded-2xl bg-slate-800 ${className}`}>
       {/* Image — aspect-ratio defines card height */}
-      <div className={`relative w-full overflow-hidden ${variant === 'compact' ? 'aspect-[4/3]' : 'aspect-[3/4]'}`}>
+      <div
+        className={`relative w-full overflow-hidden ${variant === 'compact' ? 'aspect-[4/3]' : 'aspect-[3/4]'}`}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         {/* Info button */}
         {onInfoTap && (
           <button
@@ -114,7 +141,7 @@ function AestheticCardInner({
               ))}
             </div>
             <span className="animate-hint-fade text-[10px] font-medium text-white/70 drop-shadow-md pointer-events-none">
-              ← more images →
+              ← swipe for more →
             </span>
           </div>
         )}
