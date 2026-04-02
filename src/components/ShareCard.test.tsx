@@ -197,7 +197,7 @@ describe('ShareCard', () => {
     await waitFor(() => {
       expect(mockedHtml2canvas).toHaveBeenCalledWith(
         expect.any(HTMLElement),
-        expect.objectContaining({ useCORS: true, scale: 2 }),
+        expect.objectContaining({ scale: 2 }),
       );
     });
 
@@ -350,7 +350,7 @@ describe('ShareCard', () => {
 
     await waitFor(() => {
       expect(screen.getByTestId('share-error')).toHaveTextContent(
-        'Could not save image. Try taking a screenshot instead.',
+        'Save failed: Canvas rendering failed',
       );
     });
 
