@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import html2canvas from 'html2canvas';
 import type { Aesthetic } from '../types';
 import { calculatePercentages, getMoodBoardImages } from '../utils/results';
 
@@ -10,6 +11,49 @@ interface ShareCardProps {
 
 export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardProps) {
   const percentages = calculatePercentages(topThree, allBuckets);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [saving, setSaving] = useState(false);
+  const savingRef = useRef(false);
+
+  const handleSaveImage = useCallback(async () => {
+    if (!cardRef.current || savingRef.current) return;
+    savingRef.current = true;
+    setSaving(true);
+    try {
+      const canvas = await html2canvas(cardRef.current, {
+        useCORS: true,
+        scale: 2,
+        backgroundColor: null,
+      });
+
+      // Try Web Share API with file sharing (natural on mobile)
+      const blob = await new Promise<Blob | null>((resolve) =>
+        canvas.toBlob(resolve, 'image/png'),
+      );
+      if (blob) {
+        const file = new File([blob], 'my-aesthetic.png', { type: 'image/png' });
+        if (navigator.canShare?.({ files: [file] })) {
+          try {
+            await navigator.share({ files: [file], title: 'My Aesthetic' });
+            return;
+          } catch {
+            // User cancelled share dialog — fall through to download
+          }
+        }
+      }
+
+      // Fallback: download the image
+      const link = document.createElement('a');
+      link.download = 'my-aesthetic.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    } catch {
+      // User cancelled share or html2canvas failed — silently ignore
+    } finally {
+      savingRef.current = false;
+      setSaving(false);
+    }
+  }, []);
 
   // Lock body scroll
   useEffect(() => {
@@ -55,6 +99,7 @@ export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardPr
 
         {/* The shareable card — fixed size for consistent screenshots */}
         <div
+          ref={cardRef}
           data-testid="share-card"
           className="w-[340px] overflow-hidden rounded-2xl bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 p-6 shadow-2xl ring-1 ring-white/10"
         >
@@ -141,10 +186,23 @@ export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardPr
           </div>
         </div>
 
-        {/* Action hint below the card */}
-        <p className="mt-3 text-center text-xs text-slate-500">
-          Screenshot this card to share ✨
-        </p>
+        {/* Save / Share button */}
+        <button
+          type="button"
+          onClick={handleSaveImage}
+          disabled={saving}
+          className="mt-3 flex w-full min-h-[44px] items-center justify-center gap-2 rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
+          aria-label="Save image"
+        >
+          {saving ? (
+            <>
+              <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
+              Saving…
+            </>
+          ) : (
+            '📥 Save Image'
+          )}
+        </button>
       </div>
     </div>
   );
