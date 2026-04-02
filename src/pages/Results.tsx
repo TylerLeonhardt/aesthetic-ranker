@@ -19,7 +19,7 @@ const bucketLabel: Record<string, string> = {
 };
 
 export default function Results() {
-  const { appPhase, reset, getTopThree, getAllRanked } = useRankerStore();
+  const { appPhase, reset, getTopThree, getTopTen, getAllRanked } = useRankerStore();
   const navigate = useNavigate();
   const [showShareCard, setShowShareCard] = useState(false);
   const [showFullRankings, setShowFullRankings] = useState(false);
@@ -27,6 +27,7 @@ export default function Results() {
   const fullRankingsRef = useRef<HTMLDivElement>(null);
 
   const topThree = getTopThree();
+  const topTen = getTopTen();
   const allRanked = getAllRanked();
 
   useEffect(() => {
@@ -129,8 +130,7 @@ export default function Results() {
       {/* Share card modal */}
       {showShareCard && (
         <ShareCard
-          topThree={topThree}
-          allBuckets={allRanked}
+          topTen={topTen}
           onClose={() => setShowShareCard(false)}
         />
       )}

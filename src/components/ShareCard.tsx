@@ -1,29 +1,35 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
 import type { Aesthetic } from '../types';
-import { calculatePercentages, getMoodBoardImages } from '../utils/results';
+import { getMoodBoardImages } from '../utils/results';
+
+const SHARE_URL = 'tylerleonhardt.github.io/aesthetic-ranker';
+const RANK_MEDALS = ['🥇', '🥈', '🥉'] as const;
 
 interface ShareCardProps {
-  topThree: Aesthetic[];
-  allBuckets: { like: Aesthetic[]; meh: Aesthetic[]; nope: Aesthetic[] };
+  topTen: Aesthetic[];
   onClose: () => void;
 }
 
-export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardProps) {
-  const percentages = calculatePercentages(topThree, allBuckets);
+export default function ShareCard({ topTen, onClose }: ShareCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const savingRef = useRef(false);
+
+  const topThree = topTen.slice(0, 3);
+  const rest = topTen.slice(3, 10);
 
   const handleSaveImage = useCallback(async () => {
     if (!cardRef.current || savingRef.current) return;
     savingRef.current = true;
     setSaving(true);
+    setError(null);
     try {
       const canvas = await html2canvas(cardRef.current, {
         useCORS: true,
         scale: 2,
-        backgroundColor: null,
+        backgroundColor: '#0f172a',
       });
 
       // Try Web Share API with file sharing (natural on mobile)
@@ -34,7 +40,7 @@ export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardPr
         const file = new File([blob], 'my-aesthetic.png', { type: 'image/png' });
         if (navigator.canShare?.({ files: [file] })) {
           try {
-            await navigator.share({ files: [file], title: 'My Aesthetic' });
+            await navigator.share({ files: [file], title: 'My Aesthetic Ranking' });
             return;
           } catch {
             // User cancelled share dialog — fall through to download
@@ -48,7 +54,13 @@ export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardPr
       link.href = canvas.toDataURL('image/png');
       link.click();
     } catch {
-      // User cancelled share or html2canvas failed — silently ignore
+      // Canvas generation failed — fall back to clipboard
+      try {
+        await navigator.clipboard.writeText(`https://${SHARE_URL}`);
+        setError('Could not generate image. Link copied to clipboard!');
+      } catch {
+        setError('Could not save image. Try taking a screenshot instead.');
+      }
     } finally {
       savingRef.current = false;
       setSaving(false);
@@ -70,7 +82,7 @@ export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardPr
     return () => document.removeEventListener('keydown', handleKey);
   }, [onClose]);
 
-  if (topThree.length < 3 || percentages.length < 3) return null;
+  if (topThree.length < 3) return null;
 
   const heroImages = topThree.map((a) => getMoodBoardImages(a, 1)[0]);
 
@@ -105,86 +117,81 @@ export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardPr
         >
           {/* Header */}
           <h2 className="mb-1 text-center text-sm font-medium tracking-widest text-slate-400 uppercase">
-            My Top 3 Aesthetics
+            My Top Aesthetics
           </h2>
           <div className="mx-auto mb-5 h-px w-16 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
 
-          {/* Top 3 aesthetics */}
-          <div className="space-y-4">
-            {topThree.map((aesthetic, index) => (
-              <div key={aesthetic.urlSlug} className="flex items-center gap-3">
-                {/* Rank badge */}
-                <div
-                  className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
-                    index === 0
-                      ? 'bg-amber-500/20 text-amber-400'
-                      : index === 1
-                        ? 'bg-slate-400/20 text-slate-300'
-                        : 'bg-orange-700/20 text-orange-400'
-                  }`}
-                >
-                  {index + 1}
-                </div>
+          {/* 🥇 #1 — Hero: full-width image */}
+          <div className="mb-4">
+            <div className="mb-1.5 flex items-center gap-2">
+              <span className="text-lg">{RANK_MEDALS[0]}</span>
+              <span className="text-base font-bold text-white">{topThree[0].name}</span>
+            </div>
+            <div className="h-36 w-full overflow-hidden rounded-xl bg-slate-700">
+              <img
+                src={heroImages[0].url}
+                alt={topThree[0].name}
+                crossOrigin="anonymous"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
 
-                {/* Hero image */}
-                <div className="h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-slate-700">
+          {/* 🥈 #2 and 🥉 #3 — side by side */}
+          <div className="mb-5 grid grid-cols-2 gap-3">
+            {topThree.slice(1).map((aesthetic, i) => (
+              <div key={aesthetic.urlSlug}>
+                <div className="mb-1.5 flex items-center gap-1.5">
+                  <span className="text-sm">{RANK_MEDALS[i + 1]}</span>
+                  <span className="truncate text-sm font-semibold text-white">
+                    {aesthetic.name}
+                  </span>
+                </div>
+                <div className="h-24 w-full overflow-hidden rounded-lg bg-slate-700">
                   <img
-                    src={heroImages[index].url}
+                    src={heroImages[i + 1].url}
                     alt={aesthetic.name}
+                    crossOrigin="anonymous"
                     className="h-full w-full object-cover"
                   />
                 </div>
-
-                {/* Name + percentage */}
-                <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-semibold text-white">
-                    {aesthetic.name}
-                  </p>
-                  <p className="text-xs text-slate-500">
-                    {aesthetic.startYear} – {aesthetic.endYear}
-                  </p>
-                </div>
-
-                {/* Percentage */}
-                <span className="shrink-0 text-sm font-bold text-indigo-400">
-                  {percentages[index]}%
-                </span>
               </div>
             ))}
           </div>
 
-          {/* Percentage bar */}
-          <div className="mt-5 flex h-2 overflow-hidden rounded-full bg-slate-800">
-            <div
-              className="bg-amber-500 transition-all"
-              style={{ width: `${percentages[0]}%` }}
-            />
-            <div
-              className="bg-indigo-500 transition-all"
-              style={{ width: `${percentages[1]}%` }}
-            />
-            <div
-              className="bg-emerald-500 transition-all"
-              style={{ width: `${percentages[2]}%` }}
-            />
-          </div>
-
-          {/* Percentage labels */}
-          <div className="mt-2 flex justify-center gap-1 text-[10px] text-slate-500">
-            <span>{percentages[0]}% {topThree[0].name}</span>
-            <span>·</span>
-            <span>{percentages[1]}% {topThree[1].name}</span>
-            <span>·</span>
-            <span>{percentages[2]}% {topThree[2].name}</span>
-          </div>
+          {/* #4-10 — compact list */}
+          {rest.length > 0 && (
+            <div className="mb-5 space-y-1.5">
+              {rest.map((aesthetic, i) => (
+                <div
+                  key={aesthetic.urlSlug}
+                  className="flex items-center gap-2.5 rounded-lg bg-slate-800/50 px-3 py-1.5"
+                >
+                  <span className="w-5 text-right text-xs font-bold text-slate-500">
+                    {i + 4}.
+                  </span>
+                  <span className="truncate text-sm text-slate-300">
+                    {aesthetic.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
 
           {/* Watermark */}
-          <div className="mt-5 text-center">
+          <div className="text-center">
             <p className="text-[10px] tracking-wide text-slate-600">
-              tylerleonhardt.github.io/aesthetic-ranker
+              {SHARE_URL}
             </p>
           </div>
         </div>
+
+        {/* Error message */}
+        {error && (
+          <p data-testid="share-error" className="mt-2 text-center text-xs text-amber-400">
+            {error}
+          </p>
+        )}
 
         {/* Save / Share button */}
         <button
