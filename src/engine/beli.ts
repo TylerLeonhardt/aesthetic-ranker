@@ -124,3 +124,18 @@ export function getProgress(state: RankerState): { completed: number; total: num
   const completed = state.buckets.like.length + state.buckets.meh.length + state.buckets.nope.length;
   return { completed, total: state.aesthetics.length };
 }
+
+const HISTORY_CAP = 50;
+
+/** Push a state snapshot onto the history stack, capping at HISTORY_CAP entries */
+export function pushHistory(history: RankerState[], state: RankerState): RankerState[] {
+  const next = [...history, state];
+  return next.length > HISTORY_CAP ? next.slice(next.length - HISTORY_CAP) : next;
+}
+
+/** Pop the most recent state from history. Returns null if history is empty. */
+export function undoLastAction(history: RankerState[]): { state: RankerState; history: RankerState[] } | null {
+  if (history.length === 0) return null;
+  const restored = history[history.length - 1];
+  return { state: restored, history: history.slice(0, -1) };
+}

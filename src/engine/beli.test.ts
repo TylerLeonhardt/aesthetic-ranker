@@ -7,6 +7,8 @@ import {
   getTopN,
   getCurrentComparison,
   getProgress,
+  pushHistory,
+  undoLastAction,
 } from './beli';
 
 /** Helper: create N mock aesthetics */
@@ -602,5 +604,142 @@ describe('done phase', () => {
     state = bucketAesthetic(state, 'nope');
     expect(state.phase).toBe('done');
     expect(getProgress(state)).toEqual({ completed: 1, total: 1 });
+  });
+});
+
+describe('undoLastAction', () => {
+  it('returns null when history is empty', () => {
+    expect(undoLastAction([])).toBeNull();
+  });
+
+  it('restores state after a bucket action', () => {
+    const aesthetics = makeAesthetics(3);
+    const state0 = makeDeterministicState(aesthetics);
+    // Perform a bucket action (state1 is the "current" state we'd undo from)
+    bucketAesthetic(state0, 'like');
+
+    const history = [state0];
+    const result = undoLastAction(history);
+
+    expect(result).not.toBeNull();
+    expect(result!.state).toBe(state0);
+    expect(result!.state.phase).toBe('bucketing');
+    expect(result!.state.currentIndex).toBe(0);
+    expect(result!.state.buckets.like).toHaveLength(0);
+    expect(result!.history).toHaveLength(0);
+  });
+
+  it('restores state after a comparison action', () => {
+    const aesthetics = makeAesthetics(3);
+    let state = makeDeterministicState(aesthetics);
+    state = bucketAesthetic(state, 'like');
+    const beforeCompare = bucketAesthetic(state, 'like');
+    expect(beforeCompare.phase).toBe('comparing');
+
+    const afterCompare = compareResult(beforeCompare, 'better');
+    expect(afterCompare.phase).toBe('bucketing');
+
+    const history = [state, beforeCompare];
+    const result = undoLastAction(history);
+
+    expect(result).not.toBeNull();
+    expect(result!.state).toBe(beforeCompare);
+    expect(result!.state.phase).toBe('comparing');
+    expect(result!.history).toHaveLength(1);
+  });
+
+  it('supports multiple sequential undos', () => {
+    const aesthetics = makeAesthetics(5);
+    const state0 = makeDeterministicState(aesthetics);
+    const state1 = bucketAesthetic(state0, 'like');
+    const state2 = bucketAesthetic(state1, 'meh');
+    bucketAesthetic(state2, 'nope');
+
+    const history = [state0, state1, state2];
+
+    // Undo 3rd bucket
+    let result = undoLastAction(history)!;
+    expect(result.state).toBe(state2);
+    expect(result.history).toHaveLength(2);
+
+    // Undo 2nd bucket
+    result = undoLastAction(result.history)!;
+    expect(result.state).toBe(state1);
+    expect(result.history).toHaveLength(1);
+
+    // Undo 1st bucket
+    result = undoLastAction(result.history)!;
+    expect(result.state).toBe(state0);
+    expect(result.state.phase).toBe('bucketing');
+    expect(result.state.currentIndex).toBe(0);
+    expect(result.history).toHaveLength(0);
+
+    // No more undos
+    expect(undoLastAction(result.history)).toBeNull();
+  });
+});
+
+describe('pushHistory', () => {
+  it('adds state to history', () => {
+    const state = makeDeterministicState(makeAesthetics(3));
+    const history = pushHistory([], state);
+    expect(history).toHaveLength(1);
+    expect(history[0]).toBe(state);
+  });
+
+  it('preserves existing history', () => {
+    const aesthetics = makeAesthetics(3);
+    const state0 = makeDeterministicState(aesthetics);
+    const state1 = bucketAesthetic(state0, 'like');
+
+    const history = pushHistory([state0], state1);
+    expect(history).toHaveLength(2);
+    expect(history[0]).toBe(state0);
+    expect(history[1]).toBe(state1);
+  });
+
+  it('caps history at 50 entries', () => {
+    const aesthetics = makeAesthetics(3);
+    const state = makeDeterministicState(aesthetics);
+
+    // Build a history of 50 entries
+    let history: RankerState[] = [];
+    for (let i = 0; i < 50; i++) {
+      history = pushHistory(history, state);
+    }
+    expect(history).toHaveLength(50);
+
+    // Add one more — oldest should be dropped
+    const newState = bucketAesthetic(state, 'like');
+    history = pushHistory(history, newState);
+    expect(history).toHaveLength(50);
+    expect(history[49]).toBe(newState);
+  });
+
+  it('drops oldest entries when over cap', () => {
+    const aesthetics = makeAesthetics(3);
+    const states: RankerState[] = [];
+    let current = makeDeterministicState(aesthetics);
+
+    // Create 52 distinct states
+    for (let i = 0; i < 52; i++) {
+      states.push(current);
+      if (current.phase === 'bucketing' && current.currentIndex < aesthetics.length) {
+        current = bucketAesthetic(current, 'like');
+        if (current.phase === 'comparing') {
+          current = compareResult(current, 'worse');
+        }
+      }
+    }
+
+    let history: RankerState[] = [];
+    for (const s of states) {
+      history = pushHistory(history, s);
+    }
+
+    expect(history).toHaveLength(50);
+    // First two states should have been dropped
+    expect(history[0]).toBe(states[2]);
+    expect(history[49]).toBe(states[51]);
   });
 });
