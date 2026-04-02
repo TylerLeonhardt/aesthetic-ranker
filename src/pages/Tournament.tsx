@@ -20,7 +20,7 @@ const bucketLabel: Record<string, string> = {
 
 export default function Tournament() {
   const {
-    appPhase, ranker, bucketCurrent, recordComparison,
+    appPhase, ranker, bucketCurrent, recordComparison, reset,
     getCurrentAesthetic, getCurrentComparison, getInsertionBucket,
     getProgress, getRankerPhase, getAllRanked,
   } = useRankerStore();
@@ -104,6 +104,22 @@ export default function Tournament() {
           </button>
         </div>
 
+        {/* Start over */}
+        <div className="pb-2 text-center">
+          <button
+            type="button"
+            onClick={() => {
+              if (window.confirm('Start over? Your progress will be lost.')) {
+                reset();
+                navigate('/');
+              }
+            }}
+            className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+          >
+            Start over
+          </button>
+        </div>
+
         {/* Detail modal */}
         {detailAesthetic && (
           <AestheticDetail
@@ -151,7 +167,7 @@ export default function Tournament() {
 
         {/* Two cards */}
         <div className="flex flex-1 flex-col justify-center py-4">
-          <div key={`${newItem.urlSlug}-vs-${existingItem.urlSlug}`} className="flex gap-3 animate-fade-in">
+          <div key={`${newItem.urlSlug}-vs-${existingItem.urlSlug}`} className="flex flex-col sm:flex-row gap-3 animate-fade-in">
             <button
               type="button"
               onClick={() => recordComparison('better')}
@@ -160,7 +176,7 @@ export default function Tournament() {
               <AestheticCard aesthetic={newItem} className="w-full" onInfoTap={() => setDetailAesthetic(newItem)} />
             </button>
 
-            <div className="flex flex-col items-center justify-center shrink-0">
+            <div className="flex items-center justify-center shrink-0">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-700 text-sm font-bold text-slate-300">
                 VS
               </div>
@@ -182,6 +198,22 @@ export default function Tournament() {
             className="mx-auto mt-4 min-h-[44px] rounded-xl bg-slate-700 px-6 py-2.5 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-600 active:bg-slate-500"
           >
             🤷 Can't decide
+          </button>
+        </div>
+
+        {/* Start over */}
+        <div className="pb-2 text-center">
+          <button
+            type="button"
+            onClick={() => {
+              if (window.confirm('Start over? Your progress will be lost.')) {
+                reset();
+                navigate('/');
+              }
+            }}
+            className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+          >
+            Start over
           </button>
         </div>
 
