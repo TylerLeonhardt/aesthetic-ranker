@@ -4,7 +4,6 @@ import { useRankerStore } from '../store/tournament';
 import type { Aesthetic } from '../types';
 import AestheticCard from '../components/AestheticCard';
 import AestheticDetail from '../components/AestheticDetail';
-import SwipeContainer from '../components/SwipeContainer';
 
 const bucketEmoji: Record<string, string> = {
   like: '👍',
@@ -63,20 +62,11 @@ export default function Tournament() {
           </div>
         </div>
 
-        {/* Card with swipe */}
+        {/* Card */}
         <div className="flex flex-1 flex-col items-center justify-center py-4">
-          <SwipeContainer
-            onSwipeRight={() => bucketCurrent('like')}
-            onSwipeLeft={() => bucketCurrent('nope')}
-            onSwipeUp={() => bucketCurrent('meh')}
-            leftHint="👎 Nope"
-            rightHint="👍 Like"
-            upHint="😐 Meh"
-          >
-            <div key={currentAesthetic.urlSlug} className="animate-fade-in w-full max-w-sm mx-auto">
-              <AestheticCard aesthetic={currentAesthetic} className="w-full" onInfoTap={() => setDetailAesthetic(currentAesthetic)} />
-            </div>
-          </SwipeContainer>
+          <div key={currentAesthetic.urlSlug} className="animate-fade-in w-full max-w-sm mx-auto">
+            <AestheticCard aesthetic={currentAesthetic} className="w-full" onInfoTap={() => setDetailAesthetic(currentAesthetic)} />
+          </div>
         </div>
 
         {/* Bucket buttons */}
