@@ -4,21 +4,58 @@ import type { Aesthetic } from '../types';
 import { getMoodBoardImages } from '../utils/results';
 
 const SHARE_URL = 'tylerleonhardt.github.io/aesthetic-ranker';
+const FULL_URL = `https://${SHARE_URL}`;
 const RANK_MEDALS = ['🥇', '🥈', '🥉'] as const;
+const CANVAS_TIMEOUT_MS = 5_000;
 
 interface ShareCardProps {
-  topTen: Aesthetic[];
+  topThree: Aesthetic[];
+  bottomThree: Aesthetic[];
   onClose: () => void;
 }
 
-export default function ShareCard({ topTen, onClose }: ShareCardProps) {
+/** Race html2canvas against a timeout so we never spin forever */
+function html2canvasWithTimeout(
+  element: HTMLElement,
+  options: Parameters<typeof html2canvas>[1],
+  timeoutMs: number,
+): Promise<HTMLCanvasElement> {
+  return Promise.race([
+    html2canvas(element, options),
+    new Promise<never>((_resolve, reject) =>
+      setTimeout(() => reject(new Error('Canvas generation timed out')), timeoutMs),
+    ),
+  ]);
+}
+
+/** Try sharing a URL via Web Share API (always works on iOS Safari) */
+async function tryShareUrl(): Promise<boolean> {
+  if (navigator.share) {
+    try {
+      await navigator.share({ url: FULL_URL, title: 'My Aesthetic Ranking' });
+      return true;
+    } catch {
+      // User cancelled or API unavailable
+    }
+  }
+  return false;
+}
+
+/** Try copying the URL to clipboard */
+async function tryCopyUrl(): Promise<boolean> {
+  try {
+    await navigator.clipboard.writeText(FULL_URL);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const savingRef = useRef(false);
-
-  const topThree = topTen.slice(0, 3);
-  const rest = topTen.slice(3, 10);
 
   const handleSaveImage = useCallback(async () => {
     if (!cardRef.current || savingRef.current) return;
@@ -26,11 +63,11 @@ export default function ShareCard({ topTen, onClose }: ShareCardProps) {
     setSaving(true);
     setError(null);
     try {
-      const canvas = await html2canvas(cardRef.current, {
+      const canvas = await html2canvasWithTimeout(cardRef.current, {
         useCORS: true,
         scale: 2,
         backgroundColor: '#0f172a',
-      });
+      }, CANVAS_TIMEOUT_MS);
 
       // Try Web Share API with file sharing (natural on mobile)
       const blob = await new Promise<Blob | null>((resolve) =>
@@ -54,13 +91,13 @@ export default function ShareCard({ topTen, onClose }: ShareCardProps) {
       link.href = canvas.toDataURL('image/png');
       link.click();
     } catch {
-      // Canvas generation failed — fall back to clipboard
-      try {
-        await navigator.clipboard.writeText(`https://${SHARE_URL}`);
+      // Canvas generation failed or timed out — try URL share, then clipboard
+      if (await tryShareUrl()) return;
+      if (await tryCopyUrl()) {
         setError('Could not generate image. Link copied to clipboard!');
-      } catch {
-        setError('Could not save image. Try taking a screenshot instead.');
+        return;
       }
+      setError('Could not save image. Try taking a screenshot instead.');
     } finally {
       savingRef.current = false;
       setSaving(false);
@@ -159,22 +196,29 @@ export default function ShareCard({ topTen, onClose }: ShareCardProps) {
             ))}
           </div>
 
-          {/* #4-10 — compact list */}
-          {rest.length > 0 && (
-            <div className="mb-5 space-y-1.5">
-              {rest.map((aesthetic, i) => (
-                <div
-                  key={aesthetic.urlSlug}
-                  className="flex items-center gap-2.5 rounded-lg bg-slate-800/50 px-3 py-1.5"
-                >
-                  <span className="w-5 text-right text-xs font-bold text-slate-500">
-                    {i + 4}.
-                  </span>
-                  <span className="truncate text-sm text-slate-300">
-                    {aesthetic.name}
-                  </span>
-                </div>
-              ))}
+          {/* Bottom 3 — "Not My Vibe" */}
+          {bottomThree.length > 0 && (
+            <div className="mb-5">
+              <div className="mb-3 flex items-center gap-2">
+                <div className="h-px flex-1 bg-slate-700" />
+                <span className="text-xs font-medium tracking-wider text-slate-500 uppercase">
+                  Not My Vibe
+                </span>
+                <div className="h-px flex-1 bg-slate-700" />
+              </div>
+              <div className="space-y-1.5">
+                {bottomThree.map((aesthetic) => (
+                  <div
+                    key={aesthetic.urlSlug}
+                    className="flex items-center gap-2.5 rounded-lg bg-slate-800/30 px-3 py-1.5"
+                  >
+                    <span className="text-sm grayscale">💀</span>
+                    <span className="truncate text-sm text-slate-500">
+                      {aesthetic.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
