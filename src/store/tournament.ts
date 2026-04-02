@@ -32,6 +32,7 @@ interface RankerStore {
   getCurrentComparison: () => { newItem: Aesthetic; existingItem: Aesthetic } | null;
   getInsertionBucket: () => BucketName | null;
   getTopThree: () => Aesthetic[];
+  getTopTen: () => Aesthetic[];
   getAllRanked: () => { like: Aesthetic[]; meh: Aesthetic[]; nope: Aesthetic[] };
   getProgress: () => { completed: number; total: number };
   getRankerPhase: () => RankerPhase | null;
@@ -105,6 +106,12 @@ export const useRankerStore = create<RankerStore>()(
         const { ranker } = get();
         if (!ranker) return [];
         return getTopN(ranker, 3);
+      },
+
+      getTopTen: () => {
+        const { ranker } = get();
+        if (!ranker) return [];
+        return getTopN(ranker, 10);
       },
 
       getAllRanked: () => {

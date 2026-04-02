@@ -107,8 +107,7 @@ test.describe('Mood Board & Share Card screenshots at 390×844', () => {
     });
 
     // Verify share card content
-    await page.waitForSelector('text=My Top 3 Aesthetics');
-    await page.waitForSelector('text=50%');
+    await page.waitForSelector('text=My Top Aesthetics');
     await page.waitForSelector('text=tylerleonhardt.github.io/aesthetic-ranker');
   });
 });
