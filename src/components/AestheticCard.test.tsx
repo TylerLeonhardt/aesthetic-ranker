@@ -100,7 +100,7 @@ describe('AestheticCard', () => {
 
   it('shows carousel dots and swipe hint when aesthetic has multiple images', () => {
     render(<AestheticCard aesthetic={stubWithImages} />);
-    expect(screen.getByText('← more images →')).toBeInTheDocument();
+    expect(screen.getByText('← swipe for more →')).toBeInTheDocument();
     expect(screen.getByLabelText('Image 1 of 3')).toBeInTheDocument();
     expect(screen.getByLabelText('Image 2 of 3')).toBeInTheDocument();
     expect(screen.getByLabelText('Image 3 of 3')).toBeInTheDocument();
@@ -108,6 +108,69 @@ describe('AestheticCard', () => {
 
   it('does not show carousel dots for single-image aesthetic', () => {
     render(<AestheticCard aesthetic={stubAesthetic} />);
-    expect(screen.queryByText('← more images →')).not.toBeInTheDocument();
+    expect(screen.queryByText('← swipe for more →')).not.toBeInTheDocument();
+  });
+
+  it('swipe left advances to next image', () => {
+    const { container } = render(<AestheticCard aesthetic={stubWithImages} />);
+    const imageArea = container.querySelector('[class*="aspect-"]')!;
+
+    // Verify starts at image 1
+    expect(screen.getByAltText('Image 1')).toBeInTheDocument();
+
+    // Simulate swipe left (start at 200, end at 100 → delta = -100)
+    fireEvent.touchStart(imageArea, { touches: [{ clientX: 200 }] });
+    fireEvent.touchEnd(imageArea, { changedTouches: [{ clientX: 100 }] });
+
+    // Should advance to image 2
+    expect(screen.getByAltText('Image 2')).toBeInTheDocument();
+  });
+
+  it('swipe right goes to previous image (wraps)', () => {
+    const { container } = render(<AestheticCard aesthetic={stubWithImages} />);
+    const imageArea = container.querySelector('[class*="aspect-"]')!;
+
+    // Simulate swipe right (start at 100, end at 200 → delta = +100)
+    fireEvent.touchStart(imageArea, { touches: [{ clientX: 100 }] });
+    fireEvent.touchEnd(imageArea, { changedTouches: [{ clientX: 200 }] });
+
+    // Should wrap to last image (Image 3)
+    expect(screen.getByAltText('Image 3')).toBeInTheDocument();
+  });
+
+  it('ignores swipes below threshold', () => {
+    const { container } = render(<AestheticCard aesthetic={stubWithImages} />);
+    const imageArea = container.querySelector('[class*="aspect-"]')!;
+
+    // Simulate a tiny swipe (delta = 30, below 50px threshold)
+    fireEvent.touchStart(imageArea, { touches: [{ clientX: 200 }] });
+    fireEvent.touchEnd(imageArea, { changedTouches: [{ clientX: 170 }] });
+
+    // Should stay on image 1
+    expect(screen.getByAltText('Image 1')).toBeInTheDocument();
+  });
+
+  it('ignores diagonal scroll with horizontal drift', () => {
+    const { container } = render(<AestheticCard aesthetic={stubWithImages} />);
+    const imageArea = container.querySelector('[class*="aspect-"]')!;
+
+    // Simulate diagonal scroll: 60px horizontal drift during 200px vertical scroll
+    fireEvent.touchStart(imageArea, { touches: [{ clientX: 150, clientY: 100 }] });
+    fireEvent.touchEnd(imageArea, { changedTouches: [{ clientX: 90, clientY: 300 }] });
+
+    // Should stay on image 1 — vertical movement dominates
+    expect(screen.getByAltText('Image 1')).toBeInTheDocument();
+  });
+
+  it('swipe does nothing on single-image aesthetic', () => {
+    const { container } = render(<AestheticCard aesthetic={stubAesthetic} />);
+    const imageArea = container.querySelector('[class*="aspect-"]')!;
+
+    // Simulate swipe left
+    fireEvent.touchStart(imageArea, { touches: [{ clientX: 200 }] });
+    fireEvent.touchEnd(imageArea, { changedTouches: [{ clientX: 100 }] });
+
+    // Should still show the same image
+    expect(screen.getByAltText('Vaporwave')).toBeInTheDocument();
   });
 });
