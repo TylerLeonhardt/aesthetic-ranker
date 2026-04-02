@@ -5,6 +5,7 @@ import {
   bucketAesthetic,
   compareResult,
   getTopN,
+  getBottomN,
   getCurrentComparison,
   getProgress,
   pushHistory,
@@ -320,6 +321,99 @@ describe('getTopN', () => {
     expect(top).toHaveLength(2);
     expect(top[0]).toBe(aesthetics[0]);
     expect(top[1]).toBe(aesthetics[1]);
+  });
+});
+
+describe('getBottomN', () => {
+  it('returns worst aesthetics first (nopes last → first, then mehs, then likes)', () => {
+    const aesthetics = makeAesthetics(6);
+    const state: RankerState = {
+      aesthetics,
+      currentIndex: 6,
+      buckets: {
+        like: [aesthetics[2], aesthetics[0]],
+        meh: [aesthetics[4]],
+        nope: [aesthetics[1], aesthetics[3], aesthetics[5]],
+      },
+      insertionState: null,
+      phase: 'done',
+    };
+
+    const bottom3 = getBottomN(state, 3);
+    expect(bottom3).toEqual([
+      aesthetics[5], // worst nope (last overall)
+      aesthetics[3], // second-worst nope
+      aesthetics[1], // third-worst (first nope in ranking)
+    ]);
+  });
+
+  it('returns only n items', () => {
+    const aesthetics = makeAesthetics(6);
+    const state: RankerState = {
+      aesthetics,
+      currentIndex: 6,
+      buckets: {
+        like: [aesthetics[0], aesthetics[1]],
+        meh: [aesthetics[2], aesthetics[3]],
+        nope: [aesthetics[4], aesthetics[5]],
+      },
+      insertionState: null,
+      phase: 'done',
+    };
+
+    const bottom2 = getBottomN(state, 2);
+    expect(bottom2).toHaveLength(2);
+    expect(bottom2).toEqual([aesthetics[5], aesthetics[4]]);
+  });
+
+  it('handles n larger than total aesthetics', () => {
+    const aesthetics = makeAesthetics(2);
+    const state: RankerState = {
+      aesthetics,
+      currentIndex: 2,
+      buckets: {
+        like: [aesthetics[0]],
+        meh: [],
+        nope: [aesthetics[1]],
+      },
+      insertionState: null,
+      phase: 'done',
+    };
+
+    const bottom = getBottomN(state, 100);
+    expect(bottom).toHaveLength(2);
+    expect(bottom[0]).toBe(aesthetics[1]); // worst
+    expect(bottom[1]).toBe(aesthetics[0]); // best (but only 2 total)
+  });
+
+  it('works with all items in one bucket', () => {
+    const aesthetics = makeAesthetics(4);
+    const state: RankerState = {
+      aesthetics,
+      currentIndex: 4,
+      buckets: {
+        like: [],
+        meh: [],
+        nope: [aesthetics[0], aesthetics[1], aesthetics[2], aesthetics[3]],
+      },
+      insertionState: null,
+      phase: 'done',
+    };
+
+    const bottom3 = getBottomN(state, 3);
+    expect(bottom3).toEqual([aesthetics[3], aesthetics[2], aesthetics[1]]);
+  });
+
+  it('returns empty array for empty buckets', () => {
+    const state: RankerState = {
+      aesthetics: [],
+      currentIndex: 0,
+      buckets: { like: [], meh: [], nope: [] },
+      insertionState: null,
+      phase: 'done',
+    };
+
+    expect(getBottomN(state, 3)).toEqual([]);
   });
 });
 

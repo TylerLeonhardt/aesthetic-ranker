@@ -26,68 +26,69 @@ function makeAesthetic(name: string, slug: string): Aesthetic {
   };
 }
 
-const topTen = [
+const topThree = [
   makeAesthetic('Vaporwave', 'vaporwave'),
   makeAesthetic('Cottagecore', 'cottagecore'),
   makeAesthetic('Dark Academia', 'dark-academia'),
-  makeAesthetic('Synthwave', 'synthwave'),
-  makeAesthetic('Cyberdelia', 'cyberdelia'),
-  makeAesthetic('Memphis', 'memphis'),
-  makeAesthetic('Blob World', 'blob-world'),
-  makeAesthetic('Airbrush Surrealism', 'airbrush-surrealism'),
-  makeAesthetic('Decoplex', 'decoplex'),
-  makeAesthetic('Diner Kitsch', 'diner-kitsch'),
 ];
 
-const topThreeOnly = topTen.slice(0, 3);
+const bottomThree = [
+  makeAesthetic('Diner Kitsch', 'diner-kitsch'),
+  makeAesthetic('Corporate Hippie', 'corporate-hippie'),
+  makeAesthetic('Dollar Store', 'dollar-store'),
+];
 
 describe('ShareCard', () => {
   afterEach(cleanup);
 
   it('renders top 3 aesthetic names with medal labels', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     expect(screen.getByText('Vaporwave')).toBeInTheDocument();
     expect(screen.getByText('Cottagecore')).toBeInTheDocument();
     expect(screen.getByText('Dark Academia')).toBeInTheDocument();
   });
 
   it('shows the title "My Top Aesthetics"', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     expect(screen.getByText('My Top Aesthetics')).toBeInTheDocument();
   });
 
-  it('shows rank numbers for items 4-10', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
-    expect(screen.getByText('4.')).toBeInTheDocument();
-    expect(screen.getByText('10.')).toBeInTheDocument();
-    expect(screen.getByText('Synthwave')).toBeInTheDocument();
+  it('shows bottom 3 "Not My Vibe" section', () => {
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
+    expect(screen.getByText('Not My Vibe')).toBeInTheDocument();
     expect(screen.getByText('Diner Kitsch')).toBeInTheDocument();
+    expect(screen.getByText('Corporate Hippie')).toBeInTheDocument();
+    expect(screen.getByText('Dollar Store')).toBeInTheDocument();
+  });
+
+  it('hides "Not My Vibe" section when bottomThree is empty', () => {
+    render(<ShareCard topThree={topThree} bottomThree={[]} onClose={() => {}} />);
+    expect(screen.queryByText('Not My Vibe')).not.toBeInTheDocument();
   });
 
   it('does not show percentages', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
-    // No percentage text should be present
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     const card = screen.getByTestId('share-card');
     expect(card.textContent).not.toMatch(/\d+%/);
   });
 
   it('shows the watermark URL', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     expect(screen.getByText('tylerleonhardt.github.io/aesthetic-ranker')).toBeInTheDocument();
   });
 
   it('renders the share card container', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     expect(screen.getByTestId('share-card')).toBeInTheDocument();
   });
 
   it('renders save image button', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     expect(screen.getByLabelText('Save image')).toBeInTheDocument();
     expect(screen.getByText('📥 Save Image')).toBeInTheDocument();
   });
 
-  it('calls html2canvas with allowTaint and triggers download on save', async () => {
+  it('calls html2canvas and triggers download on save', async () => {
     const fakeCanvas = {
       toBlob: (cb: (blob: Blob | null) => void) => cb(null),
       toDataURL: () => 'data:image/png;base64,fake',
@@ -102,7 +103,7 @@ describe('ShareCard', () => {
       return document.createElementNS('http://www.w3.org/1999/xhtml', tag) as HTMLElement;
     });
 
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     fireEvent.click(screen.getByLabelText('Save image'));
 
     await waitFor(() => {
@@ -137,7 +138,7 @@ describe('ShareCard', () => {
       configurable: true,
     });
 
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     fireEvent.click(screen.getByLabelText('Save image'));
 
     await waitFor(() => {
@@ -181,7 +182,7 @@ describe('ShareCard', () => {
       return document.createElementNS('http://www.w3.org/1999/xhtml', tag) as HTMLElement;
     });
 
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     fireEvent.click(screen.getByLabelText('Save image'));
 
     await waitFor(() => {
@@ -198,15 +199,47 @@ describe('ShareCard', () => {
     vi.restoreAllMocks();
   });
 
-  it('shows error message when html2canvas fails and clipboard works', async () => {
+  it('falls back to URL share when html2canvas fails and share API available', async () => {
     mockedHtml2canvas.mockRejectedValue(new Error('Canvas rendering failed'));
+
+    const shareFn = vi.fn().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, 'share', {
+      value: shareFn,
+      configurable: true,
+    });
+
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
+    fireEvent.click(screen.getByLabelText('Save image'));
+
+    await waitFor(() => {
+      expect(shareFn).toHaveBeenCalledWith(
+        expect.objectContaining({
+          url: 'https://tylerleonhardt.github.io/aesthetic-ranker',
+          title: 'My Aesthetic Ranking',
+        }),
+      );
+    });
+
+    Object.defineProperty(navigator, 'share', { value: undefined, configurable: true });
+    vi.restoreAllMocks();
+  });
+
+  it('falls back to clipboard when html2canvas and share both fail', async () => {
+    mockedHtml2canvas.mockRejectedValue(new Error('Canvas rendering failed'));
+
+    // share rejects too
+    Object.defineProperty(navigator, 'share', {
+      value: vi.fn().mockRejectedValue(new Error('Share failed')),
+      configurable: true,
+    });
+
     const clipboardSpy = vi.fn().mockResolvedValue(undefined);
     Object.defineProperty(navigator, 'clipboard', {
       value: { writeText: clipboardSpy },
       configurable: true,
     });
 
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     fireEvent.click(screen.getByLabelText('Save image'));
 
     await waitFor(() => {
@@ -217,18 +250,23 @@ describe('ShareCard', () => {
 
     expect(clipboardSpy).toHaveBeenCalledWith('https://tylerleonhardt.github.io/aesthetic-ranker');
 
+    Object.defineProperty(navigator, 'share', { value: undefined, configurable: true });
     Object.defineProperty(navigator, 'clipboard', { value: undefined, configurable: true });
     vi.restoreAllMocks();
   });
 
-  it('shows fallback error when both canvas and clipboard fail', async () => {
+  it('shows fallback error when canvas, share, and clipboard all fail', async () => {
     mockedHtml2canvas.mockRejectedValue(new Error('Canvas rendering failed'));
+    Object.defineProperty(navigator, 'share', {
+      value: undefined,
+      configurable: true,
+    });
     Object.defineProperty(navigator, 'clipboard', {
       value: { writeText: vi.fn().mockRejectedValue(new Error('Clipboard denied')) },
       configurable: true,
     });
 
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     fireEvent.click(screen.getByLabelText('Save image'));
 
     await waitFor(() => {
@@ -242,35 +280,28 @@ describe('ShareCard', () => {
   });
 
   it('shows hero images for top 3 aesthetics', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     expect(screen.getByAltText('Vaporwave')).toBeInTheDocument();
     expect(screen.getByAltText('Cottagecore')).toBeInTheDocument();
     expect(screen.getByAltText('Dark Academia')).toBeInTheDocument();
   });
 
-  it('works with exactly 3 aesthetics (no #4-10 section)', () => {
-    render(<ShareCard topTen={topThreeOnly} onClose={() => {}} />);
-    expect(screen.getByText('Vaporwave')).toBeInTheDocument();
-    // Should not show any numbered items (4. through 10.)
-    expect(screen.queryByText('4.')).not.toBeInTheDocument();
-  });
-
   it('closes on backdrop click', () => {
     let closed = false;
-    render(<ShareCard topTen={topTen} onClose={() => { closed = true; }} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => { closed = true; }} />);
     fireEvent.click(screen.getByRole('dialog'));
     expect(closed).toBe(true);
   });
 
   it('closes on close button click', () => {
     let closed = false;
-    render(<ShareCard topTen={topTen} onClose={() => { closed = true; }} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => { closed = true; }} />);
     fireEvent.click(screen.getByLabelText('Close'));
     expect(closed).toBe(true);
   });
 
   it('has accessible dialog role', () => {
-    render(<ShareCard topTen={topTen} onClose={() => {}} />);
+    render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
     const dialog = screen.getByRole('dialog');
     expect(dialog).toHaveAttribute('aria-modal', 'true');
   });

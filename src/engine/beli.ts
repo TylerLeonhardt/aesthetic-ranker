@@ -107,6 +107,12 @@ export function getTopN(state: RankerState, n: number): Aesthetic[] {
   return all.slice(0, n);
 }
 
+/** Get bottom N aesthetics: worst first (nopes last→first, then mehs, then likes) */
+export function getBottomN(state: RankerState, n: number): Aesthetic[] {
+  const all = [...state.buckets.like, ...state.buckets.meh, ...state.buckets.nope];
+  return all.slice(-n).reverse();
+}
+
 /** Get the current comparison pair, or null if not comparing */
 export function getCurrentComparison(state: RankerState): { newItem: Aesthetic; existingItem: Aesthetic } | null {
   if (state.phase !== 'comparing' || !state.insertionState) return null;

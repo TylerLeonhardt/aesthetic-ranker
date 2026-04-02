@@ -6,6 +6,7 @@ import {
   bucketAesthetic,
   compareResult as processComparison,
   getTopN,
+  getBottomN,
   getCurrentComparison,
   getProgress,
   pushHistory,
@@ -33,6 +34,7 @@ interface RankerStore {
   getInsertionBucket: () => BucketName | null;
   getTopThree: () => Aesthetic[];
   getTopTen: () => Aesthetic[];
+  getBottomThree: () => Aesthetic[];
   getAllRanked: () => { like: Aesthetic[]; meh: Aesthetic[]; nope: Aesthetic[] };
   getProgress: () => { completed: number; total: number };
   getRankerPhase: () => RankerPhase | null;
@@ -112,6 +114,12 @@ export const useRankerStore = create<RankerStore>()(
         const { ranker } = get();
         if (!ranker) return [];
         return getTopN(ranker, 10);
+      },
+
+      getBottomThree: () => {
+        const { ranker } = get();
+        if (!ranker) return [];
+        return getBottomN(ranker, 3);
       },
 
       getAllRanked: () => {
