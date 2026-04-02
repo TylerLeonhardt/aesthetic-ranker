@@ -1,0 +1,722 @@
+[
+  {
+    "name": "Acidgrafix",
+    "urlSlug": "acidgrafix",
+    "startYear": "Mid 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/0dbe920bb6f149659a8f6ae59c28e1fb.png"
+  },
+  {
+    "name": "Airbrush Surrealism",
+    "urlSlug": "airbrush-surrealism",
+    "startYear": "Late 1960s",
+    "endYear": "Mid 1980s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/5b8d8396560c4deb85cc8d2b2f83c7f3.png"
+  },
+  {
+    "name": "Austurbane",
+    "urlSlug": "austurbane",
+    "startYear": "Late 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/230926f8acbb43be8909b9c950fa3b0e.png"
+  },
+  {
+    "name": "Blob World",
+    "urlSlug": "blob-world",
+    "startYear": "Mid 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/4ffcc1b712d047c785aafad0fae98d96.png"
+  },
+  {
+    "name": "Bubblegum Bling",
+    "urlSlug": "bubblegum-bling",
+    "startYear": "Late 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/b733e25d76a84a6783da17eb33de49ab.png"
+  },
+  {
+    "name": "Cassette Futurism",
+    "urlSlug": "cassette-futurism",
+    "startYear": "Mid 1970s",
+    "endYear": "Late 1980s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/3282219e0af447b69f4860a4c4cf47b4.png"
+  },
+  {
+    "name": "Contempo Eclectic",
+    "urlSlug": "contempo-eclectic",
+    "startYear": "Mid 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/3cb1fc28d069441c9e6deb9eb1b84722.png"
+  },
+  {
+    "name": "Corporate Gen-X Cyber",
+    "urlSlug": "corporate-gen-x-cyber",
+    "startYear": "Early 1990s",
+    "endYear": "Late 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/7b60036a288945bc853766ddfb09145e.png"
+  },
+  {
+    "name": "Corporate Grunge / Grunge\u2122",
+    "urlSlug": "corporate-grunge-grunge",
+    "startYear": "Late 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/4003797b3eb44be9bced62820a9cc373.png"
+  },
+  {
+    "name": "Corporate Hippie",
+    "urlSlug": "corporate-hippie",
+    "startYear": "Late 1960s",
+    "endYear": "Mid 1970s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/ed2ac83556914ac9a07d440bce92938f.png"
+  },
+  {
+    "name": "Corporate Memphis",
+    "urlSlug": "corporate-memphis",
+    "startYear": "Mid 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/fa00cf1dce744463bc8e5a791aac36ee.png"
+  },
+  {
+    "name": "Curly Girly",
+    "urlSlug": "curly-girly",
+    "startYear": "Late 1990s",
+    "endYear": "Mid 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/62fe65f374344fedaadb456f35849f18.png"
+  },
+  {
+    "name": "Cyberbougie",
+    "urlSlug": "cyberbougie",
+    "startYear": "Late 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/1473ffca357745a0a39411bd3bf4dc0b.png"
+  },
+  {
+    "name": "Cyberdelia",
+    "urlSlug": "cyberdelia",
+    "startYear": "Late 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/1490dad1790a4c53a13ff21d002249bd.png"
+  },
+  {
+    "name": "Deco-Luxe",
+    "urlSlug": "deco-luxe",
+    "startYear": "Early 1980s",
+    "endYear": "Late 1980s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/228bd22793b8410b8e70dffba38f02c4.png"
+  },
+  {
+    "name": "Decoplex",
+    "urlSlug": "decoplex",
+    "startYear": "Early 1990s",
+    "endYear": "Current",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/a1d719b87cae45b6b87b47a3d6c46b18.png"
+  },
+  {
+    "name": "Diner Kitsch",
+    "urlSlug": "diner-kitsch",
+    "startYear": "Mid 1970s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/78f088ce5d444fd6960b9fc501483548.png"
+  },
+  {
+    "name": "Disco Deco",
+    "urlSlug": "disco-deco",
+    "startYear": "Mid 1960s",
+    "endYear": "Late 1970s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/9f8e09e0c42e4a4c8da530fd0ba5bad9.png"
+  },
+  {
+    "name": "Dollar Store Vernacular",
+    "urlSlug": "dollar-store-vernacular",
+    "startYear": "Late 1960s",
+    "endYear": "Current",
+    "decadeYear": "Timeless",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/d3cf00f9b7364be5a9192c7f38785400.png"
+  },
+  {
+    "name": "Early Cyber",
+    "urlSlug": "early-cyber",
+    "startYear": "Late 1980s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/51b9eba40f6b436f9c5b853cd8756c87.png"
+  },
+  {
+    "name": "Eco-Beige",
+    "urlSlug": "eco-beige",
+    "startYear": "Late 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/6556bbd76e87439baa79b952f1c4131c.png"
+  },
+  {
+    "name": "Electroclash",
+    "urlSlug": "electroclash",
+    "startYear": "Late 1990s",
+    "endYear": "Early 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/9d6ffeec7c3a447e98d1bfc814c614ba.png"
+  },
+  {
+    "name": "Factory Pomo",
+    "urlSlug": "factory-pomo",
+    "startYear": "Late 1980s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/862be56d16254d7597e851ecdc7bac02.png"
+  },
+  {
+    "name": "Festival Marketplace",
+    "urlSlug": "festival-marketplace",
+    "startYear": "Early 1980s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/3ad8332e87094b4c968f88edc4f422aa.png"
+  },
+  {
+    "name": "Four Colors",
+    "urlSlug": "four-colors",
+    "startYear": "Mid 2000s",
+    "endYear": "Current",
+    "decadeYear": "Timeless",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/ad52ad3b5bbc489fa7049f996bfbb5da.png"
+  },
+  {
+    "name": "Frasurbane",
+    "urlSlug": "frasurbane",
+    "startYear": "Late 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/eaa51d58754740a58b5ecd7e3ecfe51f.png"
+  },
+  {
+    "name": "Frutiger Aero",
+    "urlSlug": "frutiger-aero",
+    "startYear": "Mid 2000s",
+    "endYear": "Early 2010s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/8beb504f3ea44e15bd2be1b1a909f8aa.png"
+  },
+  {
+    "name": "Gay Nineties Revival",
+    "urlSlug": "gay-nineties-revival",
+    "startYear": "Late 1960s",
+    "endYear": "Late 1970s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/947c4e2be69449e89deb2a324f9c2049.png"
+  },
+  {
+    "name": "Gen X Soft Club",
+    "urlSlug": "gen-x-soft-club",
+    "startYear": "Early 1990s",
+    "endYear": "Mid 2000s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/bdfc95662c26457a975da2a8db002f87.png"
+  },
+  {
+    "name": "Gen-X Home",
+    "urlSlug": "gen-x-home",
+    "startYear": "Late 1990s",
+    "endYear": "Early 2000s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/a4830288b04149f89fed9862a1eb6b77.png"
+  },
+  {
+    "name": "Genericana",
+    "urlSlug": "genericana",
+    "startYear": "Mid 1980s",
+    "endYear": "Early 2010s",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/6310b8ae1ec54b8ea0eda5a6ed790c39.png"
+  },
+  {
+    "name": "Geo-Boho",
+    "urlSlug": "geo-boho",
+    "startYear": "Early 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/37e3f52d99324f27b5b682b75e51753a.png"
+  },
+  {
+    "name": "Global Village Coffeehouse",
+    "urlSlug": "global-village-coffeehouse",
+    "startYear": "Late 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/f44ea2a14e0f4a6abd8ca9f312e88078.png"
+  },
+  {
+    "name": "Googie Kitsch",
+    "urlSlug": "googie-kitsch",
+    "startYear": "Late 1970s",
+    "endYear": "Early 2000s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/d215afad2e5444b997f68dbcdfd6dbfc.png"
+  },
+  {
+    "name": "Graffiti Pop",
+    "urlSlug": "graffiti-pop",
+    "startYear": "Early 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/2241f9ee951c400796521e1f09c72dcd.png"
+  },
+  {
+    "name": "Groovival",
+    "urlSlug": "groovival",
+    "startYear": "Late 1980s",
+    "endYear": "Early 2000s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/51f006a5fea149c7857a6b04c2b55b56.png"
+  },
+  {
+    "name": "Hexatron",
+    "urlSlug": "hexatron",
+    "startYear": "Early 2010s",
+    "endYear": "Late 2010s",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/4c8f499f68a5407b8c25e933f21642c5.png"
+  },
+  {
+    "name": "Hipness Purgatory",
+    "urlSlug": "hipness-purgatory",
+    "startYear": "Early 2000s",
+    "endYear": "Early 2010s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/60bc995d7b8c4b868a0fed59fe2756e2.png"
+  },
+  {
+    "name": "Indie Sleaze",
+    "urlSlug": "indie-sleaze",
+    "startYear": "Early 2000s",
+    "endYear": "Early 2010s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/658392432a2e4c9f82367a90002d76c3.png"
+  },
+  {
+    "name": "Indiecraft",
+    "urlSlug": "indiecraft",
+    "startYear": "Mid 2000s",
+    "endYear": "Mid 2010s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/9bb523bb09d04f5593158fb327ffcf4b.png"
+  },
+  {
+    "name": "Industrial Americana",
+    "urlSlug": "industrial-americana",
+    "startYear": "Early 1990s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/96510e39fd0343108ff8c77959144430.png"
+  },
+  {
+    "name": "Industrial Gothic",
+    "urlSlug": "industrial-gothic",
+    "startYear": "Late 1970s",
+    "endYear": "Late 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/b552076fdbf94b9ea341f11e3a3df26c.png"
+  },
+  {
+    "name": "Internet Awesomesauce",
+    "urlSlug": "internet-awesomesauce",
+    "startYear": "Late 2000s",
+    "endYear": "Mid 2010s",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/ef76104c2ac94f6881cdd1acacff43bc.png"
+  },
+  {
+    "name": "Jumbled Font",
+    "urlSlug": "jumbled-font",
+    "startYear": "Mid 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "Timeless",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/5deaf31d6817455c8b1d13add2101322.png"
+  },
+  {
+    "name": "Laser Grid",
+    "urlSlug": "laser-grid",
+    "startYear": "Early 1980s",
+    "endYear": "Late 1980s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/418ce15d90bb4885a611b90d71756a80.png"
+  },
+  {
+    "name": "Live Laugh Love",
+    "urlSlug": "live-laugh-love",
+    "startYear": "Early 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/bf4236f3b0234713ab26f31d350d8f43.png"
+  },
+  {
+    "name": "McBling",
+    "urlSlug": "mcbling",
+    "startYear": "Early 2000s",
+    "endYear": "Late 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/d21f332e90af4ef596b87931b9a7259a.png"
+  },
+  {
+    "name": "Memphis Jr.",
+    "urlSlug": "memphis-jr",
+    "startYear": "Late 1980s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/d5a9a787e8264a4981b110247b7e91f4.png"
+  },
+  {
+    "name": "Memphis-Milano",
+    "urlSlug": "memphis-milano",
+    "startYear": "Early 1980s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/0fe0486901cc43ee840213bf0aa81790.png"
+  },
+  {
+    "name": "Metalheart",
+    "urlSlug": "metalheart",
+    "startYear": "Late 1990s",
+    "endYear": "Mid 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/ddea96bd7e8b41c7b1bd93cfec38cd71.png"
+  },
+  {
+    "name": "Mid Century Medieval",
+    "urlSlug": "mid-century-medieval",
+    "startYear": "Mid 1950s",
+    "endYear": "Mid 1970s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/bd3855f6b720463fa9caa5cf01283d47.png"
+  },
+  {
+    "name": "Millennium Disco",
+    "urlSlug": "millennium-disco",
+    "startYear": "Late 1990s",
+    "endYear": "Early 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/d92811490e134590b7e7c4e6dcd8119f.png"
+  },
+  {
+    "name": "Mission School",
+    "urlSlug": "mission-school",
+    "startYear": "Mid 1990s",
+    "endYear": "Early 2000s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/31456b55dd6d4a6b8893f90252cfb76c.png"
+  },
+  {
+    "name": "Neo-Vectorheart",
+    "urlSlug": "neo-vectorheart",
+    "startYear": "Late 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/b413bd9a46804647886448c873a8d43b.png"
+  },
+  {
+    "name": "Neo-Y2K",
+    "urlSlug": "neo-y2k",
+    "startYear": "Late 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/d98b62fddd474e829af364a700ab6ef9.png"
+  },
+  {
+    "name": "Neoclassical Pomo",
+    "urlSlug": "neoclassical-pomo",
+    "startYear": "Late 1970s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/0bb69e9e6403401d9e6cb880319aa9f4.png"
+  },
+  {
+    "name": "Neon Ooze",
+    "urlSlug": "neon-ooze",
+    "startYear": "Late 1980s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/793d4d79f60c4f0882cefc3d929dcc8b.png"
+  },
+  {
+    "name": "New Wave Tropical",
+    "urlSlug": "new-wave-tropical",
+    "startYear": "Late 1970s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/06a866216fb348f1ac99ea49febb023f.png"
+  },
+  {
+    "name": "Nouveau Organic",
+    "urlSlug": "nouveau-organic",
+    "startYear": "Late 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/dacd8819d26140978ac86cac8d5e2757.png"
+  },
+  {
+    "name": "Nu-Brutalism",
+    "urlSlug": "nu-brutalism",
+    "startYear": "Early 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/72e25268c68045f3bf0ca82747dfbbc0.png"
+  },
+  {
+    "name": "Pacific Punk Wave",
+    "urlSlug": "pacific-punk-wave",
+    "startYear": "Mid 1970s",
+    "endYear": "Early 1980s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/3aafa4f75c2c48cc830dd60b7c364c39.png"
+  },
+  {
+    "name": "Paperback Chic",
+    "urlSlug": "paperback-chic",
+    "startYear": "Late 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/e7ecf8cb4edd4d58b10e34bf3fbe1648.png"
+  },
+  {
+    "name": "Pastel Southwestern",
+    "urlSlug": "pastel-southwestern",
+    "startYear": "Early 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/f6f2c4358fe949a097aa94ee1f5d683f.png"
+  },
+  {
+    "name": "Pixelscape",
+    "urlSlug": "pixelscape",
+    "startYear": "Early 2000s",
+    "endYear": "Mid 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/fa9492acb42e4799ac61efea7bda90b1.png"
+  },
+  {
+    "name": "Polychrome",
+    "urlSlug": "polychrome",
+    "startYear": "Early 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/cb5f918595a24235b5d0a7287a086327.png"
+  },
+  {
+    "name": "Pomo Faux Ruins",
+    "urlSlug": "pomo-faux-ruins",
+    "startYear": "Late 1970s",
+    "endYear": "Late 1980s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/ed349ba7425b4d058167cc2b6dbe3692.png"
+  },
+  {
+    "name": "Preschool Pop",
+    "urlSlug": "preschool-pop",
+    "startYear": "Early 1990s",
+    "endYear": "Early 2000s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/387fe69f0dc34453a8376ec7ccde136b.png"
+  },
+  {
+    "name": "Pulp Fantasy",
+    "urlSlug": "pulp-fantasy",
+    "startYear": "Early 1960s",
+    "endYear": "Mid 1980s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/16f3eda7cee7466287f1322d9b268952.png"
+  },
+  {
+    "name": "Rad Dog / Neon Surf",
+    "urlSlug": "rad-dog-neon-surf",
+    "startYear": "Late 1980s",
+    "endYear": "Early 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/cd531ca0bacf403f81b14c8f5a6210cd.png"
+  },
+  {
+    "name": "Radical Surrealism",
+    "urlSlug": "radical-surrealism",
+    "startYear": "Late 1960s",
+    "endYear": "Early 1980s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/c0c11508540f4cdeb80f15d117abe591.png"
+  },
+  {
+    "name": "Renaissance Revival",
+    "urlSlug": "renaissance-revival",
+    "startYear": "Early 1990s",
+    "endYear": "Late 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/bd358fb7e1764793a1cafd66fbc1a541.png"
+  },
+  {
+    "name": "Silicon Dreams",
+    "urlSlug": "silicon-dreams",
+    "startYear": "Late 1980s",
+    "endYear": "Late 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/1ff09b72258e47d8ad8763668c871e5c.png"
+  },
+  {
+    "name": "Soft Colonial Wanderlust",
+    "urlSlug": "soft-colonial-wanderlust",
+    "startYear": "Late 1980s",
+    "endYear": "Mid 2010s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/18a1ec6be7084d749ada05b4a2650aee.png"
+  },
+  {
+    "name": "Sportsbrut",
+    "urlSlug": "sportsbrut",
+    "startYear": "Late 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/4c2ba0a05f9c44baa62c71bc7b4defbd.png"
+  },
+  {
+    "name": "Superflat Pop",
+    "urlSlug": "superflat-pop",
+    "startYear": "Late 2000s",
+    "endYear": "Early 2010s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/1fb19922ddb04830ad44249d86b77d0d.png"
+  },
+  {
+    "name": "Supergraphic Ultramodern",
+    "urlSlug": "supergraphic-ultramodern",
+    "startYear": "Late 1960s",
+    "endYear": "Late 1970s",
+    "decadeYear": "1970s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/88e53769f8fb483d8db86b7f17277a13.png"
+  },
+  {
+    "name": "Synthwave",
+    "urlSlug": "synthwave",
+    "startYear": "Early 2010s",
+    "endYear": "Current",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/8ca58dbe7a9f4bc581be056e27f1005f.png"
+  },
+  {
+    "name": "Teenpunk",
+    "urlSlug": "teenpunk",
+    "startYear": "Late 1990s",
+    "endYear": "Early 2010s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/4dcc48c4b41f42f69db45cdea705424c.png"
+  },
+  {
+    "name": "Themed Spaces",
+    "urlSlug": "themed-spaces",
+    "startYear": "Early 1990s",
+    "endYear": "Early 2000s",
+    "decadeYear": "Timeless",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/8661bbb894884d198553605930187e48.png"
+  },
+  {
+    "name": "Ultramodern Revival",
+    "urlSlug": "ultramodern-revival",
+    "startYear": "Late 1990s",
+    "endYear": "Mid 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/34384b83c48a47509354326a2c9ddbbd.png"
+  },
+  {
+    "name": "UrBling",
+    "urlSlug": "urbling",
+    "startYear": "Early 2000s",
+    "endYear": "Late 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/f4af256b216b4adb9870c8fd1bc7b6a7.png"
+  },
+  {
+    "name": "Utopian Scholastic",
+    "urlSlug": "utopian-scholastic",
+    "startYear": "Late 1980s",
+    "endYear": "Late 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/2a4d2ca726f042adbe7db95bd8d33875.png"
+  },
+  {
+    "name": "Vaporwave",
+    "urlSlug": "vaporwave",
+    "startYear": "Early 2010s",
+    "endYear": "Late 2010s",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/76948270bb5344a79af6f48f21f32660.png"
+  },
+  {
+    "name": "Vector Minimalism",
+    "urlSlug": "vector-minimalism",
+    "startYear": "Early 2010s",
+    "endYear": "Late 2010s",
+    "decadeYear": "2010s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/f58aab744e8d4fe4bfd1387997819f66.png"
+  },
+  {
+    "name": "Vectorheart",
+    "urlSlug": "vectorheart",
+    "startYear": "Late 1990s",
+    "endYear": "Mid 2000s",
+    "decadeYear": "2000s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/f969840729af44c8b80c7c7b8e675911.png"
+  },
+  {
+    "name": "Wacky Pomo",
+    "urlSlug": "wacky-pomo",
+    "startYear": "Early 1990s",
+    "endYear": "Early 2000s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/ebb48f54f0044fc88ce3c998e70bc2b8.png"
+  },
+  {
+    "name": "Whimsicraft",
+    "urlSlug": "whimsicraft",
+    "startYear": "Mid 1980s",
+    "endYear": "Mid 1990s",
+    "decadeYear": "1980s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/83f68894fcfe420cbd618f5fb374746f.png"
+  },
+  {
+    "name": "Whimsigothic",
+    "urlSlug": "whimsigothic",
+    "startYear": "Late 1980s",
+    "endYear": "Late 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/7d2f9b86b6ab4279b5296adb9ba5f253.png"
+  },
+  {
+    "name": "Y2K Aesthetic",
+    "urlSlug": "y2k-aesthetic",
+    "startYear": "Early 1990s",
+    "endYear": "Late 1990s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/fb7c1b7f05f446a2bae6d87c164fba7d.png"
+  },
+  {
+    "name": "Zen-X",
+    "urlSlug": "zen-x",
+    "startYear": "Early 1990s",
+    "endYear": "Early 2000s",
+    "decadeYear": "1990s",
+    "displayImageUrl": "https://cari-prod.s3.us-east-1.amazonaws.com/aesthetic/example/9c8264604c30441382c55d700f5cd163.png"
+  }
+]
