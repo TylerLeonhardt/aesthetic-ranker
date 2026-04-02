@@ -19,9 +19,9 @@ const bucketLabel: Record<string, string> = {
 
 export default function Tournament() {
   const {
-    appPhase, ranker, bucketCurrent, recordComparison, reset,
+    appPhase, ranker, bucketCurrent, recordComparison, reset, undo,
     getCurrentAesthetic, getCurrentComparison, getInsertionBucket,
-    getProgress, getRankerPhase, getAllRanked,
+    getProgress, getRankerPhase, getAllRanked, canUndo,
   } = useRankerStore();
   const navigate = useNavigate();
   const [detailAesthetic, setDetailAesthetic] = useState<Aesthetic | null>(null);
@@ -94,8 +94,17 @@ export default function Tournament() {
           </button>
         </div>
 
-        {/* Start over */}
-        <div className="pb-2 text-center">
+        {/* Undo / Start over */}
+        <div className="flex items-center justify-center gap-4 pb-2">
+          {canUndo() && (
+            <button
+              type="button"
+              onClick={() => undo()}
+              className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+            >
+              ↩ Undo
+            </button>
+          )}
           <button
             type="button"
             onClick={() => {
@@ -191,8 +200,17 @@ export default function Tournament() {
           </button>
         </div>
 
-        {/* Start over */}
-        <div className="pb-1 text-center">
+        {/* Undo / Start over */}
+        <div className="flex items-center justify-center gap-4 pb-1">
+          {canUndo() && (
+            <button
+              type="button"
+              onClick={() => undo()}
+              className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+            >
+              ↩ Undo
+            </button>
+          )}
           <button
             type="button"
             onClick={() => {

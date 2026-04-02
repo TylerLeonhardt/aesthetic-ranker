@@ -8,6 +8,8 @@ import {
   getTopN,
   getCurrentComparison,
   getProgress,
+  pushHistory,
+  undoLastAction,
 } from '../engine/beli';
 import aestheticsData from '../data/aesthetics.json';
 
@@ -16,11 +18,13 @@ type AppPhase = 'landing' | 'ranking' | 'results';
 interface RankerStore {
   appPhase: AppPhase;
   ranker: RankerState | null;
+  history: RankerState[];
 
   // Actions
   startRanking: () => void;
   bucketCurrent: (bucket: BucketName) => void;
   recordComparison: (result: CompareResult) => void;
+  undo: () => void;
   reset: () => void;
 
   // Derived getters
@@ -31,6 +35,7 @@ interface RankerStore {
   getAllRanked: () => { like: Aesthetic[]; meh: Aesthetic[]; nope: Aesthetic[] };
   getProgress: () => { completed: number; total: number };
   getRankerPhase: () => RankerPhase | null;
+  canUndo: () => boolean;
 }
 
 export const useRankerStore = create<RankerStore>()(
@@ -38,35 +43,45 @@ export const useRankerStore = create<RankerStore>()(
     (set, get) => ({
       appPhase: 'landing',
       ranker: null,
+      history: [],
 
       startRanking: () => {
         const ranker = initRanker(aestheticsData as Aesthetic[]);
-        set({ appPhase: 'ranking', ranker });
+        set({ appPhase: 'ranking', ranker, history: [] });
       },
 
       bucketCurrent: (bucket) => {
-        const { ranker } = get();
+        const { ranker, history } = get();
         if (!ranker) return;
         const next = bucketAesthetic(ranker, bucket);
+        const nextHistory = pushHistory(history, ranker);
         if (next.phase === 'done') {
-          set({ ranker: next, appPhase: 'results' });
+          set({ ranker: next, appPhase: 'results', history: nextHistory });
         } else {
-          set({ ranker: next });
+          set({ ranker: next, history: nextHistory });
         }
       },
 
       recordComparison: (result) => {
-        const { ranker } = get();
+        const { ranker, history } = get();
         if (!ranker) return;
         const next = processComparison(ranker, result);
+        const nextHistory = pushHistory(history, ranker);
         if (next.phase === 'done') {
-          set({ ranker: next, appPhase: 'results' });
+          set({ ranker: next, appPhase: 'results', history: nextHistory });
         } else {
-          set({ ranker: next });
+          set({ ranker: next, history: nextHistory });
         }
       },
 
-      reset: () => set({ appPhase: 'landing', ranker: null }),
+      undo: () => {
+        const { history } = get();
+        const result = undoLastAction(history);
+        if (!result) return;
+        set({ ranker: result.state, history: result.history, appPhase: 'ranking' });
+      },
+
+      reset: () => set({ appPhase: 'landing', ranker: null, history: [] }),
 
       getCurrentAesthetic: () => {
         const { ranker } = get();
@@ -108,6 +123,8 @@ export const useRankerStore = create<RankerStore>()(
         const { ranker } = get();
         return ranker?.phase ?? null;
       },
+
+      canUndo: () => get().history.length > 0,
     }),
     { name: 'aesthetic-ranker-beli' },
   ),
