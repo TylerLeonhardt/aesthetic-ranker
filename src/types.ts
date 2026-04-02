@@ -1,3 +1,8 @@
+export interface AestheticImage {
+  url: string;
+  title: string;
+}
+
 export interface Aesthetic {
   name: string;
   urlSlug: string;
@@ -5,6 +10,8 @@ export interface Aesthetic {
   endYear: string;
   decadeYear: string;
   displayImageUrl: string;
+  description?: string;
+  images?: AestheticImage[];
 }
 
 export type BucketName = 'like' | 'meh' | 'nope';

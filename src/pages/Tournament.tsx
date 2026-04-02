@@ -1,7 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useRankerStore } from '../store/tournament';
+import type { Aesthetic } from '../types';
 import AestheticCard from '../components/AestheticCard';
+import AestheticDetail from '../components/AestheticDetail';
 import SwipeContainer from '../components/SwipeContainer';
 
 const bucketEmoji: Record<string, string> = {
@@ -18,11 +20,12 @@ const bucketLabel: Record<string, string> = {
 
 export default function Tournament() {
   const {
-    appPhase, ranker, bucketCurrent, recordComparison,
+    appPhase, ranker, bucketCurrent, recordComparison, reset,
     getCurrentAesthetic, getCurrentComparison, getInsertionBucket,
     getProgress, getRankerPhase, getAllRanked,
   } = useRankerStore();
   const navigate = useNavigate();
+  const [detailAesthetic, setDetailAesthetic] = useState<Aesthetic | null>(null);
 
   useEffect(() => {
     if (appPhase === 'landing' || !ranker) {
@@ -66,9 +69,12 @@ export default function Tournament() {
             onSwipeRight={() => bucketCurrent('like')}
             onSwipeLeft={() => bucketCurrent('nope')}
             onSwipeUp={() => bucketCurrent('meh')}
+            leftHint="👎 Nope"
+            rightHint="👍 Like"
+            upHint="😐 Meh"
           >
             <div key={currentAesthetic.urlSlug} className="animate-fade-in w-full max-w-sm mx-auto">
-              <AestheticCard aesthetic={currentAesthetic} className="w-full" />
+              <AestheticCard aesthetic={currentAesthetic} className="w-full" onInfoTap={() => setDetailAesthetic(currentAesthetic)} />
             </div>
           </SwipeContainer>
         </div>
@@ -97,6 +103,30 @@ export default function Tournament() {
             👍 Like
           </button>
         </div>
+
+        {/* Start over */}
+        <div className="pb-2 text-center">
+          <button
+            type="button"
+            onClick={() => {
+              if (window.confirm('Start over? Your progress will be lost.')) {
+                reset();
+                navigate('/');
+              }
+            }}
+            className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+          >
+            Start over
+          </button>
+        </div>
+
+        {/* Detail modal */}
+        {detailAesthetic && (
+          <AestheticDetail
+            aesthetic={detailAesthetic}
+            onClose={() => setDetailAesthetic(null)}
+          />
+        )}
       </div>
     );
   }
@@ -137,16 +167,16 @@ export default function Tournament() {
 
         {/* Two cards */}
         <div className="flex flex-1 flex-col justify-center py-4">
-          <div key={`${newItem.urlSlug}-vs-${existingItem.urlSlug}`} className="flex flex-col gap-3 md:flex-row md:gap-6 animate-fade-in">
+          <div key={`${newItem.urlSlug}-vs-${existingItem.urlSlug}`} className="flex flex-col sm:flex-row gap-3 animate-fade-in">
             <button
               type="button"
               onClick={() => recordComparison('better')}
-              className="flex-1 cursor-pointer rounded-2xl ring-2 ring-transparent transition-all duration-200 hover:ring-indigo-400 focus:outline-none focus:ring-indigo-400 active:scale-[0.98]"
+              className="flex-1 min-w-0 cursor-pointer rounded-2xl ring-2 ring-transparent transition-all duration-200 hover:ring-indigo-400 focus:outline-none focus:ring-indigo-400 active:scale-[0.98]"
             >
-              <AestheticCard aesthetic={newItem} className="w-full" />
+              <AestheticCard aesthetic={newItem} className="w-full" onInfoTap={() => setDetailAesthetic(newItem)} />
             </button>
 
-            <div className="flex items-center justify-center md:flex-col">
+            <div className="flex items-center justify-center shrink-0">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-700 text-sm font-bold text-slate-300">
                 VS
               </div>
@@ -155,9 +185,9 @@ export default function Tournament() {
             <button
               type="button"
               onClick={() => recordComparison('worse')}
-              className="flex-1 cursor-pointer rounded-2xl ring-2 ring-transparent transition-all duration-200 hover:ring-indigo-400 focus:outline-none focus:ring-indigo-400 active:scale-[0.98]"
+              className="flex-1 min-w-0 cursor-pointer rounded-2xl ring-2 ring-transparent transition-all duration-200 hover:ring-indigo-400 focus:outline-none focus:ring-indigo-400 active:scale-[0.98]"
             >
-              <AestheticCard aesthetic={existingItem} className="w-full" />
+              <AestheticCard aesthetic={existingItem} className="w-full" onInfoTap={() => setDetailAesthetic(existingItem)} />
             </button>
           </div>
 
@@ -170,6 +200,30 @@ export default function Tournament() {
             🤷 Can't decide
           </button>
         </div>
+
+        {/* Start over */}
+        <div className="pb-2 text-center">
+          <button
+            type="button"
+            onClick={() => {
+              if (window.confirm('Start over? Your progress will be lost.')) {
+                reset();
+                navigate('/');
+              }
+            }}
+            className="text-xs text-slate-500 transition-colors hover:text-slate-300"
+          >
+            Start over
+          </button>
+        </div>
+
+        {/* Detail modal */}
+        {detailAesthetic && (
+          <AestheticDetail
+            aesthetic={detailAesthetic}
+            onClose={() => setDetailAesthetic(null)}
+          />
+        )}
       </div>
     );
   }
