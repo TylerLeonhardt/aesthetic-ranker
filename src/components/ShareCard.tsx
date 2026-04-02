@@ -33,8 +33,12 @@ export default function ShareCard({ topThree, allBuckets, onClose }: ShareCardPr
       if (blob) {
         const file = new File([blob], 'my-aesthetic.png', { type: 'image/png' });
         if (navigator.canShare?.({ files: [file] })) {
-          await navigator.share({ files: [file], title: 'My Aesthetic' });
-          return;
+          try {
+            await navigator.share({ files: [file], title: 'My Aesthetic' });
+            return;
+          } catch {
+            // User cancelled share dialog — fall through to download
+          }
         }
       }
 
