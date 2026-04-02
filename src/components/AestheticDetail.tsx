@@ -149,9 +149,14 @@ function AestheticDetailInner({
           </p>
 
           {aesthetic.description && (
-            <p className="text-sm leading-relaxed text-slate-300">
-              {aesthetic.description}
-            </p>
+            <div className="space-y-1.5">
+              <p className="text-sm leading-relaxed text-slate-300">
+                {aesthetic.description}
+              </p>
+              <p className="text-xs italic text-slate-500">
+                Description from CARI Institute
+              </p>
+            </div>
           )}
 
           <a
