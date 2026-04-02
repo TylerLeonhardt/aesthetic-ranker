@@ -140,7 +140,7 @@ export default function Tournament() {
     const { newItem, existingItem } = comparison;
 
     return (
-      <div className="flex min-h-dvh flex-col px-4 py-6">
+      <div className="flex min-h-dvh flex-col px-4 py-3">
         {/* Progress */}
         <div className="w-full space-y-1.5">
           <div className="flex items-center justify-between text-xs text-slate-400">
@@ -158,7 +158,7 @@ export default function Tournament() {
         </div>
 
         {/* Context label */}
-        <div className="mt-4 text-center">
+        <div className="mt-2 text-center">
           <span className="text-sm text-slate-400">
             Ranking in your {bucketEmoji[insertionBucket]} {bucketLabel[insertionBucket]}
           </span>
@@ -166,18 +166,18 @@ export default function Tournament() {
         </div>
 
         {/* Two cards */}
-        <div className="flex flex-1 flex-col justify-center py-4">
-          <div key={`${newItem.urlSlug}-vs-${existingItem.urlSlug}`} className="flex flex-col sm:flex-row gap-3 animate-fade-in">
+        <div className="flex flex-1 flex-col justify-center py-2">
+          <div key={`${newItem.urlSlug}-vs-${existingItem.urlSlug}`} className="flex flex-col sm:flex-row gap-2 animate-fade-in">
             <button
               type="button"
               onClick={() => recordComparison('better')}
               className="flex-1 min-w-0 cursor-pointer rounded-2xl ring-2 ring-transparent transition-all duration-200 hover:ring-indigo-400 focus:outline-none focus:ring-indigo-400 active:scale-[0.98]"
             >
-              <AestheticCard aesthetic={newItem} className="w-full" onInfoTap={() => setDetailAesthetic(newItem)} />
+              <AestheticCard aesthetic={newItem} variant="compact" className="w-full" onInfoTap={() => setDetailAesthetic(newItem)} />
             </button>
 
             <div className="flex items-center justify-center shrink-0">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-700 text-sm font-bold text-slate-300">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-700 text-xs font-bold text-slate-300">
                 VS
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function Tournament() {
               onClick={() => recordComparison('worse')}
               className="flex-1 min-w-0 cursor-pointer rounded-2xl ring-2 ring-transparent transition-all duration-200 hover:ring-indigo-400 focus:outline-none focus:ring-indigo-400 active:scale-[0.98]"
             >
-              <AestheticCard aesthetic={existingItem} className="w-full" onInfoTap={() => setDetailAesthetic(existingItem)} />
+              <AestheticCard aesthetic={existingItem} variant="compact" className="w-full" onInfoTap={() => setDetailAesthetic(existingItem)} />
             </button>
           </div>
 
@@ -195,14 +195,14 @@ export default function Tournament() {
           <button
             type="button"
             onClick={() => recordComparison('tie')}
-            className="mx-auto mt-4 min-h-[44px] rounded-xl bg-slate-700 px-6 py-2.5 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-600 active:bg-slate-500"
+            className="mx-auto mt-2 min-h-[44px] rounded-xl bg-slate-700 px-6 py-2.5 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-600 active:bg-slate-500"
           >
             🤷 Can't decide
           </button>
         </div>
 
         {/* Start over */}
-        <div className="pb-2 text-center">
+        <div className="pb-1 text-center">
           <button
             type="button"
             onClick={() => {
