@@ -34,8 +34,8 @@ async function tryShareUrl(): Promise<boolean> {
     try {
       await navigator.share({ url: FULL_URL, title: 'My Aesthetic Ranking' });
       return true;
-    } catch {
-      // User cancelled or API unavailable
+    } catch (err) {
+      console.error('ShareCard URL share failed:', err);
     }
   }
   return false;
@@ -46,7 +46,8 @@ async function tryCopyUrl(): Promise<boolean> {
   try {
     await navigator.clipboard.writeText(FULL_URL);
     return true;
-  } catch {
+  } catch (err) {
+    console.error('ShareCard clipboard copy failed:', err);
     return false;
   }
 }
@@ -79,7 +80,8 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
             const blobUrl = URL.createObjectURL(blob);
             blobUrls.push(blobUrl);
             return [url, blobUrl] as const;
-          } catch {
+          } catch (err) {
+            console.error('ShareCard image prefetch failed:', err);
             return [url, url] as const; // fallback to original URL
           }
         }),
@@ -106,7 +108,6 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
     setError(null);
     try {
       const canvas = await html2canvasWithTimeout(cardRef.current, {
-        useCORS: true,
         scale: 2,
         backgroundColor: '#0f172a',
       }, CANVAS_TIMEOUT_MS);
@@ -121,8 +122,8 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
           try {
             await navigator.share({ files: [file], title: 'My Aesthetic Ranking' });
             return;
-          } catch {
-            // User cancelled share dialog — fall through to download
+          } catch (err) {
+            console.error('ShareCard file share cancelled/failed:', err);
           }
         }
       }
@@ -132,14 +133,14 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
       link.download = 'my-aesthetic.png';
       link.href = canvas.toDataURL('image/png');
       link.click();
-    } catch {
-      // Canvas generation failed or timed out — try URL share, then clipboard
+    } catch (err) {
+      console.error('ShareCard save failed:', err);
       if (await tryShareUrl()) return;
       if (await tryCopyUrl()) {
         setError('Could not generate image. Link copied to clipboard!');
         return;
       }
-      setError('Could not save image. Try taking a screenshot instead.');
+      setError(`Save failed: ${err instanceof Error ? err.message : String(err)}`);
     } finally {
       savingRef.current = false;
       setSaving(false);
