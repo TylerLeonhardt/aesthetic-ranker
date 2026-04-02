@@ -1,22 +1,39 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useTournamentStore } from '../store/tournament';
+import { useRankerStore } from '../store/tournament';
+import type { Aesthetic } from '../types';
 import ResultsPodium from '../components/ResultsPodium';
+import AestheticDetail from '../components/AestheticDetail';
+
+const bucketEmoji: Record<string, string> = {
+  like: '👍',
+  meh: '😐',
+  nope: '👎',
+};
+
+const bucketLabel: Record<string, string> = {
+  like: 'Likes',
+  meh: 'Mehs',
+  nope: 'Nopes',
+};
 
 export default function Results() {
-  const { phase, reset, getTopThree } = useTournamentStore();
+  const { appPhase, reset, getTopThree, getAllRanked } = useRankerStore();
   const navigate = useNavigate();
   const [copied, setCopied] = useState(false);
+  const [showFullRankings, setShowFullRankings] = useState(false);
+  const [selectedAesthetic, setSelectedAesthetic] = useState<Aesthetic | null>(null);
 
   const topThree = getTopThree();
+  const allRanked = getAllRanked();
 
   useEffect(() => {
-    if (phase !== 'results' || topThree.length < 3) {
+    if (appPhase !== 'results' || topThree.length < 3) {
       navigate('/', { replace: true });
     }
-  }, [phase, topThree.length, navigate]);
+  }, [appPhase, topThree.length, navigate]);
 
-  if (phase !== 'results' || topThree.length < 3) return null;
+  if (appPhase !== 'results' || topThree.length < 3) return null;
 
   const handleShare = async () => {
     const text = [
@@ -67,6 +84,66 @@ export default function Results() {
           Try Again
         </button>
       </div>
+
+      {/* Full Rankings */}
+      <div className="mt-8 w-full max-w-md">
+        <button
+          type="button"
+          onClick={() => setShowFullRankings(!showFullRankings)}
+          className="flex w-full items-center justify-between rounded-xl bg-slate-800 px-4 py-3 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-700"
+        >
+          <span>Full Rankings</span>
+          <span className={`transition-transform ${showFullRankings ? 'rotate-180' : ''}`}>▾</span>
+        </button>
+
+        {showFullRankings && (
+          <div className="mt-2 space-y-4">
+            {(['like', 'meh', 'nope'] as const).map((bucket) => {
+              const items = allRanked[bucket];
+              if (items.length === 0) return null;
+              const emoji = bucketEmoji[bucket];
+              const label = bucketLabel[bucket];
+              return (
+                <div key={bucket}>
+                  <h3 className="mb-2 text-sm font-semibold text-slate-400">
+                    {emoji} {label} ({items.length})
+                  </h3>
+                  <div className="space-y-1">
+                    {items.map((aesthetic, index) => (
+                      <button
+                        key={aesthetic.urlSlug}
+                        type="button"
+                        onClick={() => setSelectedAesthetic(aesthetic)}
+                        className="flex w-full items-center gap-3 rounded-lg bg-slate-800/50 px-3 py-2 text-left transition-colors hover:bg-slate-700/50"
+                      >
+                        <span className="text-xs font-medium text-slate-500 w-6 text-right">{index + 1}</span>
+                        <img src={aesthetic.displayImageUrl} alt="" className="h-8 w-8 rounded object-cover" />
+                        <div className="flex-1 min-w-0">
+                          <div className="text-sm font-medium text-white truncate">{aesthetic.name}</div>
+                          <div className="text-xs text-slate-400">{aesthetic.startYear} – {aesthetic.endYear}</div>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Detail modal for full rankings */}
+      {selectedAesthetic && (
+        <AestheticDetail
+          aesthetic={selectedAesthetic}
+          rank={(() => {
+            // Find global rank across all buckets
+            const all = [...allRanked.like, ...allRanked.meh, ...allRanked.nope];
+            return all.findIndex((a) => a.urlSlug === selectedAesthetic.urlSlug) + 1;
+          })()}
+          onClose={() => setSelectedAesthetic(null)}
+        />
+      )}
     </div>
   );
 }

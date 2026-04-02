@@ -7,16 +7,28 @@ export interface Aesthetic {
   displayImageUrl: string;
 }
 
-export interface TournamentState {
-  aesthetics: Aesthetic[];
-  scores: Record<string, number>;
-  matchHistory: string[];
-  currentRound: number;
-  totalRounds: number;
-  currentMatchups: [string, string][];
-  currentMatchupIndex: number;
+export type BucketName = 'like' | 'meh' | 'nope';
+export type CompareResult = 'better' | 'worse' | 'tie';
+export type RankerPhase = 'bucketing' | 'comparing' | 'done';
+
+export interface InsertionState {
+  aesthetic: Aesthetic;
+  bucket: BucketName;
+  low: number;
+  high: number;
+  compareIndex: number;
 }
 
-export type MatchResult = 'left' | 'right' | 'draw';
+export interface RankerState {
+  aesthetics: Aesthetic[];
+  currentIndex: number;
+  buckets: {
+    like: Aesthetic[];
+    meh: Aesthetic[];
+    nope: Aesthetic[];
+  };
+  insertionState: InsertionState | null;
+  phase: RankerPhase;
+}
 
-export type Phase = 'landing' | 'playing' | 'results';
+

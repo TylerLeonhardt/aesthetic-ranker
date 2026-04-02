@@ -1,76 +1,117 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { Aesthetic, MatchResult, Phase, TournamentState } from '../types';
+import type { Aesthetic, BucketName, CompareResult, RankerPhase, RankerState } from '../types';
 import {
-  initTournament,
-  recordResult,
+  initRanker,
+  bucketAesthetic,
+  compareResult as processComparison,
   getTopN,
-  isTournamentComplete,
-  getCurrentMatchup,
-} from '../engine/swiss';
+  getCurrentComparison,
+  getProgress,
+} from '../engine/beli';
 import aestheticsData from '../data/aesthetics.json';
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+type AppPhase = 'landing' | 'ranking' | 'results';
 
-interface TournamentStore {
-  phase: Phase;
-  tournament: TournamentState | null;
-  startTournament: () => void;
-  recordMatchResult: (result: MatchResult) => void;
+interface RankerStore {
+  appPhase: AppPhase;
+  ranker: RankerState | null;
+
+  // Actions
+  startRanking: () => void;
+  bucketCurrent: (bucket: BucketName) => void;
+  recordComparison: (result: CompareResult) => void;
   reset: () => void;
-  getCurrentMatchup: () => [Aesthetic, Aesthetic] | null;
+
+  // Derived getters
+  getCurrentAesthetic: () => Aesthetic | null;
+  getCurrentComparison: () => { newItem: Aesthetic; existingItem: Aesthetic } | null;
+  getInsertionBucket: () => BucketName | null;
   getTopThree: () => Aesthetic[];
+  getAllRanked: () => { like: Aesthetic[]; meh: Aesthetic[]; nope: Aesthetic[] };
+  getProgress: () => { completed: number; total: number };
+  getRankerPhase: () => RankerPhase | null;
 }
 
-export const useTournamentStore = create<TournamentStore>()(
+export const useRankerStore = create<RankerStore>()(
   persist(
     (set, get) => ({
-      phase: 'landing',
-      tournament: null,
+      appPhase: 'landing',
+      ranker: null,
 
-      startTournament: () => {
-        const shuffled = shuffle(aestheticsData as Aesthetic[]);
-        const tournament = initTournament(shuffled);
-        set({ phase: 'playing', tournament });
+      startRanking: () => {
+        const ranker = initRanker(aestheticsData as Aesthetic[]);
+        set({ appPhase: 'ranking', ranker });
       },
 
-      recordMatchResult: (result: MatchResult) => {
-        const { tournament } = get();
-        if (!tournament) return;
-
-        const next = recordResult(tournament, result);
-        if (isTournamentComplete(next)) {
-          set({ tournament: next, phase: 'results' });
+      bucketCurrent: (bucket) => {
+        const { ranker } = get();
+        if (!ranker) return;
+        const next = bucketAesthetic(ranker, bucket);
+        if (next.phase === 'done') {
+          set({ ranker: next, appPhase: 'results' });
         } else {
-          set({ tournament: next });
+          set({ ranker: next });
         }
       },
 
-      reset: () => {
-        set({ phase: 'landing', tournament: null });
+      recordComparison: (result) => {
+        const { ranker } = get();
+        if (!ranker) return;
+        const next = processComparison(ranker, result);
+        if (next.phase === 'done') {
+          set({ ranker: next, appPhase: 'results' });
+        } else {
+          set({ ranker: next });
+        }
       },
 
-      getCurrentMatchup: () => {
-        const { tournament } = get();
-        if (!tournament) return null;
-        return getCurrentMatchup(tournament);
+      reset: () => set({ appPhase: 'landing', ranker: null }),
+
+      getCurrentAesthetic: () => {
+        const { ranker } = get();
+        if (!ranker || ranker.phase !== 'bucketing') return null;
+        return ranker.aesthetics[ranker.currentIndex] ?? null;
+      },
+
+      getCurrentComparison: () => {
+        const { ranker } = get();
+        if (!ranker) return null;
+        return getCurrentComparison(ranker);
+      },
+
+      getInsertionBucket: () => {
+        const { ranker } = get();
+        if (!ranker?.insertionState) return null;
+        return ranker.insertionState.bucket;
       },
 
       getTopThree: () => {
-        const { tournament } = get();
-        if (!tournament) return [];
-        return getTopN(tournament, 3);
+        const { ranker } = get();
+        if (!ranker) return [];
+        return getTopN(ranker, 3);
+      },
+
+      getAllRanked: () => {
+        const { ranker } = get();
+        if (!ranker) return { like: [], meh: [], nope: [] };
+        return { ...ranker.buckets };
+      },
+
+      getProgress: () => {
+        const { ranker } = get();
+        if (!ranker) return { completed: 0, total: 0 };
+        return getProgress(ranker);
+      },
+
+      getRankerPhase: () => {
+        const { ranker } = get();
+        return ranker?.phase ?? null;
       },
     }),
-    { name: 'aesthetic-ranker-tournament' },
+    { name: 'aesthetic-ranker-beli' },
   ),
 );
 
-export default useTournamentStore;
+// Keep backward-compatible default export
+export default useRankerStore;

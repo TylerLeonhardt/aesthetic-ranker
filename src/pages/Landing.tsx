@@ -1,14 +1,14 @@
 import { useNavigate } from 'react-router-dom';
-import { useTournamentStore } from '../store/tournament';
+import { useRankerStore } from '../store/tournament';
 
 export default function Landing() {
-  const { startTournament, tournament, phase } = useTournamentStore();
+  const { startRanking, ranker, appPhase } = useRankerStore();
   const navigate = useNavigate();
 
-  const hasInProgress = phase === 'playing' && tournament !== null;
+  const hasInProgress = appPhase === 'ranking' && ranker !== null;
 
   const handleStart = () => {
-    startTournament();
+    startRanking();
     navigate('/play');
   };
 
@@ -23,8 +23,9 @@ export default function Landing() {
       </h1>
 
       <p className="mt-4 max-w-md text-lg text-slate-400">
-        Discover your top 3 visual aesthetics through a head-to-head tournament
-        of 90 styles from{' '}
+        See aesthetics one at a time. Like them, meh them, or nope them.
+        We'll ask you to compare within each group to find your true top 3.
+        90 styles from{' '}
         <a
           href="https://cari.institute"
           target="_blank"
@@ -42,7 +43,7 @@ export default function Landing() {
           onClick={handleStart}
           className="min-h-[44px] rounded-xl bg-indigo-600 px-8 py-3 text-lg font-semibold text-white transition-colors hover:bg-indigo-500 active:bg-indigo-700"
         >
-          Start Tournament
+          Start Ranking
         </button>
 
         {hasInProgress && (
@@ -51,7 +52,7 @@ export default function Landing() {
             onClick={handleResume}
             className="min-h-[44px] rounded-xl bg-slate-700 px-8 py-3 text-base font-medium text-slate-300 transition-colors hover:bg-slate-600"
           >
-            Resume Tournament
+            Resume Ranking
           </button>
         )}
       </div>
