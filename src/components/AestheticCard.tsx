@@ -15,23 +15,24 @@ export default function AestheticCard({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-2xl bg-slate-800 aspect-[3/4] ${className}`}
+      className={`relative overflow-hidden rounded-2xl bg-slate-800 ${className}`}
     >
-      {/* Loading skeleton — visible until image loads or errors */}
-      {!loaded && !errored && (
-        <div className="absolute inset-0 animate-pulse bg-slate-700" />
-      )}
-
+      {/* Image in normal flow — its aspect-ratio defines the card's height */}
       <img
         src={aesthetic.displayImageUrl}
         alt={aesthetic.name}
         loading="eager"
         onLoad={() => setLoaded(true)}
         onError={() => setErrored(true)}
-        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
+        className={`block w-full aspect-[3/4] object-cover transition-opacity duration-300 ${
           loaded ? 'opacity-100' : 'opacity-0'
         }`}
       />
+
+      {/* Loading skeleton — absolutely positioned on top while image loads */}
+      {!loaded && !errored && (
+        <div className="absolute inset-0 animate-pulse bg-slate-700" />
+      )}
       {/* Dark gradient overlay at bottom */}
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-12">
         <h3 className="text-lg font-bold text-white leading-tight">

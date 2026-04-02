@@ -27,9 +27,9 @@ export default function SwipeContainer({
   );
 
   return (
-    <div ref={ref} className="relative" {...handlers}>
+    <div ref={ref} className="relative w-full" {...handlers}>
       <div
-        className="transition-transform duration-75"
+        className="w-full transition-transform duration-75"
         style={{
           transform: `translate(${swipeDelta.x}px, ${Math.min(swipeDelta.y, 0)}px) rotate(${rotation}deg)`,
           opacity,
