@@ -62,7 +62,7 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
   // Pre-fetch images as blob URLs to avoid iOS Safari CORS cache tainting
   useEffect(() => {
     let cancelled = false;
-    let blobUrls: string[] = [];
+    const blobUrls: string[] = [];
 
     const urls = [
       ...new Set(
@@ -97,7 +97,6 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
       cancelled = true;
       blobUrls.forEach((u) => URL.revokeObjectURL(u));
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [topThree]);
 
   const handleSaveImage = useCallback(async () => {
