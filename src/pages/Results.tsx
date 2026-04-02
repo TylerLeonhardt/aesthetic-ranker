@@ -14,7 +14,7 @@ export default function Results() {
     if (phase !== 'results' || topThree.length < 3) {
       navigate('/', { replace: true });
     }
-  }, [phase, topThree, navigate]);
+  }, [phase, topThree.length, navigate]);
 
   if (phase !== 'results' || topThree.length < 3) return null;
 

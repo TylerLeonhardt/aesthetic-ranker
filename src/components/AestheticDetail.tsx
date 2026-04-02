@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import type { Aesthetic } from '../types';
 
 interface AestheticDetailProps {
@@ -13,11 +14,18 @@ export default function AestheticDetail({
   rank,
   onClose,
 }: AestheticDetailProps) {
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleKey);
+    return () => document.removeEventListener('keydown', handleKey);
+  }, [onClose]);
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
       onClick={onClose}
-      onKeyDown={(e) => e.key === 'Escape' && onClose()}
       role="dialog"
       aria-modal="true"
       aria-label={`${aesthetic.name} details`}
@@ -25,7 +33,6 @@ export default function AestheticDetail({
       <div
         className="relative w-full max-w-md overflow-hidden rounded-2xl bg-slate-800 shadow-2xl animate-fade-in"
         onClick={(e) => e.stopPropagation()}
-        onKeyDown={() => {}}
         role="document"
       >
         {/* Close button */}

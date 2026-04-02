@@ -77,10 +77,18 @@ export function useSwipe<T extends HTMLElement = HTMLDivElement>({
     startPos.current = null;
   }, [swipeDirection, onSwipeLeft, onSwipeRight, onSwipeUp]);
 
+  const handleTouchCancel = useCallback(() => {
+    isSwiping.current = false;
+    setSwipeDirection(null);
+    setSwipeDelta({ x: 0, y: 0 });
+    startPos.current = null;
+  }, []);
+
   const handlers = {
     onTouchStart: handleTouchStart,
     onTouchMove: handleTouchMove,
     onTouchEnd: handleTouchEnd,
+    onTouchCancel: handleTouchCancel,
   };
 
   return { ref, swipeDirection, swipeDelta, handlers };
