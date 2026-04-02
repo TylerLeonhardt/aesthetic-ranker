@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useRankerStore } from '../store/tournament';
 import type { Aesthetic } from '../types';
-import ResultsPodium from '../components/ResultsPodium';
+import MoodBoard from '../components/MoodBoard';
+import ShareCard from '../components/ShareCard';
 import AestheticDetail from '../components/AestheticDetail';
 
 const bucketEmoji: Record<string, string> = {
@@ -20,9 +21,10 @@ const bucketLabel: Record<string, string> = {
 export default function Results() {
   const { appPhase, reset, getTopThree, getAllRanked } = useRankerStore();
   const navigate = useNavigate();
-  const [copied, setCopied] = useState(false);
+  const [showShareCard, setShowShareCard] = useState(false);
   const [showFullRankings, setShowFullRankings] = useState(false);
   const [selectedAesthetic, setSelectedAesthetic] = useState<Aesthetic | null>(null);
+  const fullRankingsRef = useRef<HTMLDivElement>(null);
 
   const topThree = getTopThree();
   const allRanked = getAllRanked();
@@ -35,46 +37,38 @@ export default function Results() {
 
   if (appPhase !== 'results' || topThree.length < 3) return null;
 
-  const handleShare = async () => {
-    const text = [
-      '🎨 My Top 3 Aesthetics:',
-      `🥇 ${topThree[0].name}`,
-      `🥈 ${topThree[1].name}`,
-      `🥉 ${topThree[2].name}`,
-      '',
-      'Find yours → https://tylerleonhardt.github.io/aesthetic-ranker/',
-    ].join('\n');
-
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // Fallback: do nothing
-    }
-  };
-
   const handleReset = () => {
     reset();
     navigate('/');
   };
 
+  const scrollToFullRankings = () => {
+    setShowFullRankings(true);
+    // Wait for render, then scroll
+    requestAnimationFrame(() => {
+      fullRankingsRef.current?.scrollIntoView({ behavior: 'smooth' });
+    });
+  };
+
   return (
-    <div className="flex min-h-dvh flex-col items-center justify-center px-4 py-8">
-      <h1 className="mb-2 text-3xl font-extrabold text-white">Your Top 3</h1>
-      <p className="mb-8 text-sm text-slate-400">
-        Tap an aesthetic to learn more
+    <div className="flex min-h-dvh flex-col items-center px-4 py-8">
+      <h1 className="mb-1 text-2xl font-extrabold text-white">
+        This Is Your Aesthetic
+      </h1>
+      <p className="mb-6 text-sm text-slate-400">
+        Tap any aesthetic to explore
       </p>
 
-      <ResultsPodium topThree={topThree} />
+      <MoodBoard topThree={topThree} />
 
-      <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+      {/* Action buttons */}
+      <div className="mt-8 flex w-full max-w-md flex-col gap-3 sm:flex-row sm:justify-center">
         <button
           type="button"
-          onClick={handleShare}
+          onClick={() => setShowShareCard(true)}
           className="min-h-[44px] rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-500"
         >
-          {copied ? 'Copied!' : 'Share Results'}
+          Share Results
         </button>
         <button
           type="button"
@@ -86,10 +80,10 @@ export default function Results() {
       </div>
 
       {/* Full Rankings */}
-      <div className="mt-8 w-full max-w-md">
+      <div ref={fullRankingsRef} className="mt-8 w-full max-w-md">
         <button
           type="button"
-          onClick={() => setShowFullRankings(!showFullRankings)}
+          onClick={showFullRankings ? () => setShowFullRankings(false) : scrollToFullRankings}
           className="flex w-full items-center justify-between rounded-xl bg-slate-800 px-4 py-3 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-700"
         >
           <span>Full Rankings</span>
@@ -132,12 +126,20 @@ export default function Results() {
         )}
       </div>
 
+      {/* Share card modal */}
+      {showShareCard && (
+        <ShareCard
+          topThree={topThree}
+          allBuckets={allRanked}
+          onClose={() => setShowShareCard(false)}
+        />
+      )}
+
       {/* Detail modal for full rankings */}
       {selectedAesthetic && (
         <AestheticDetail
           aesthetic={selectedAesthetic}
           rank={(() => {
-            // Find global rank across all buckets
             const all = [...allRanked.like, ...allRanked.meh, ...allRanked.nope];
             return all.findIndex((a) => a.urlSlug === selectedAesthetic.urlSlug) + 1;
           })()}
