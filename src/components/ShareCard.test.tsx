@@ -5,12 +5,12 @@ import '@testing-library/jest-dom/vitest';
 import ShareCard from './ShareCard';
 import type { Aesthetic } from '../types';
 
-vi.mock('html2canvas', () => ({
-  default: vi.fn(),
+vi.mock('./renderShareCard', () => ({
+  renderShareCard: vi.fn(),
 }));
 
-import html2canvas from 'html2canvas';
-const mockedHtml2canvas = vi.mocked(html2canvas);
+import { renderShareCard } from './renderShareCard';
+const mockedRenderShareCard = vi.mocked(renderShareCard);
 
 function makeAesthetic(name: string, slug: string): Aesthetic {
   return {
@@ -176,12 +176,12 @@ describe('ShareCard', () => {
     });
   });
 
-  it('calls html2canvas and triggers download on save', async () => {
+  it('calls renderShareCard and triggers download on save', async () => {
     const fakeCanvas = {
       toBlob: (cb: (blob: Blob | null) => void) => cb(null),
       toDataURL: () => 'data:image/png;base64,fake',
     };
-    mockedHtml2canvas.mockResolvedValue(fakeCanvas as unknown as HTMLCanvasElement);
+    mockedRenderShareCard.mockResolvedValue(fakeCanvas as unknown as HTMLCanvasElement);
 
     const clickSpy = vi.fn();
     vi.spyOn(document, 'createElement').mockImplementation((tag: string) => {
@@ -195,10 +195,7 @@ describe('ShareCard', () => {
     fireEvent.click(screen.getByLabelText('Save image'));
 
     await waitFor(() => {
-      expect(mockedHtml2canvas).toHaveBeenCalledWith(
-        expect.any(HTMLElement),
-        expect.objectContaining({ scale: 1.5 }),
-      );
+      expect(mockedRenderShareCard).toHaveBeenCalled();
     });
 
     await waitFor(() => {
@@ -212,7 +209,7 @@ describe('ShareCard', () => {
       toBlob: (cb: (blob: Blob | null) => void) => cb(fakeBlob),
       toDataURL: () => 'data:image/png;base64,fake',
     };
-    mockedHtml2canvas.mockResolvedValue(fakeCanvas as unknown as HTMLCanvasElement);
+    mockedRenderShareCard.mockResolvedValue(fakeCanvas as unknown as HTMLCanvasElement);
 
     const shareFn = vi.fn().mockResolvedValue(undefined);
     Object.defineProperty(navigator, 'canShare', {
@@ -246,7 +243,7 @@ describe('ShareCard', () => {
       toBlob: (cb: (blob: Blob | null) => void) => cb(fakeBlob),
       toDataURL: () => 'data:image/png;base64,fake',
     };
-    mockedHtml2canvas.mockResolvedValue(fakeCanvas as unknown as HTMLCanvasElement);
+    mockedRenderShareCard.mockResolvedValue(fakeCanvas as unknown as HTMLCanvasElement);
 
     const shareFn = vi.fn().mockRejectedValue(new DOMException('Share canceled', 'AbortError'));
     Object.defineProperty(navigator, 'canShare', {
@@ -281,8 +278,8 @@ describe('ShareCard', () => {
     Object.defineProperty(navigator, 'share', { value: undefined, configurable: true });
   });
 
-  it('falls back to URL share when html2canvas fails and share API available', async () => {
-    mockedHtml2canvas.mockRejectedValue(new Error('Canvas rendering failed'));
+  it('falls back to URL share when renderShareCard fails and share API available', async () => {
+    mockedRenderShareCard.mockRejectedValue(new Error('Canvas rendering failed'));
 
     const shareFn = vi.fn().mockResolvedValue(undefined);
     Object.defineProperty(navigator, 'share', {
@@ -305,8 +302,8 @@ describe('ShareCard', () => {
     Object.defineProperty(navigator, 'share', { value: undefined, configurable: true });
   });
 
-  it('falls back to clipboard when html2canvas and share both fail', async () => {
-    mockedHtml2canvas.mockRejectedValue(new Error('Canvas rendering failed'));
+  it('falls back to clipboard when renderShareCard and share both fail', async () => {
+    mockedRenderShareCard.mockRejectedValue(new Error('Canvas rendering failed'));
 
     Object.defineProperty(navigator, 'share', {
       value: vi.fn().mockRejectedValue(new Error('Share failed')),
@@ -335,7 +332,7 @@ describe('ShareCard', () => {
   });
 
   it('shows fallback error when canvas, share, and clipboard all fail', async () => {
-    mockedHtml2canvas.mockRejectedValue(new Error('Canvas rendering failed'));
+    mockedRenderShareCard.mockRejectedValue(new Error('Canvas rendering failed'));
     Object.defineProperty(navigator, 'share', {
       value: undefined,
       configurable: true,
