@@ -197,7 +197,7 @@ describe('ShareCard', () => {
     await waitFor(() => {
       expect(mockedHtml2canvas).toHaveBeenCalledWith(
         expect.any(HTMLElement),
-        expect.objectContaining({ scale: 2 }),
+        expect.objectContaining({ scale: 1.5 }),
       );
     });
 
