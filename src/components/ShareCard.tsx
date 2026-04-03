@@ -6,7 +6,7 @@ import { getMoodBoardImages } from '../utils/results';
 const SHARE_URL = 'tylerleonhardt.github.io/aesthetic-ranker';
 const FULL_URL = `https://${SHARE_URL}`;
 const RANK_MEDALS = ['🥇', '🥈', '🥉'] as const;
-const CANVAS_TIMEOUT_MS = 5_000;
+const CANVAS_TIMEOUT_MS = 15_000;
 
 interface ShareCardProps {
   topThree: Aesthetic[];
@@ -108,7 +108,7 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
     setError(null);
     try {
       const canvas = await html2canvasWithTimeout(cardRef.current, {
-        scale: 2,
+        scale: 1.5,
         backgroundColor: '#0f172a',
       }, CANVAS_TIMEOUT_MS);
 
