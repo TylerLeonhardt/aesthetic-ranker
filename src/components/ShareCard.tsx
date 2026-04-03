@@ -6,26 +6,11 @@ import { getMoodBoardImages } from '../utils/results';
 const SHARE_URL = 'tylerleonhardt.github.io/aesthetic-ranker';
 const FULL_URL = `https://${SHARE_URL}`;
 const RANK_MEDALS = ['🥇', '🥈', '🥉'] as const;
-const CANVAS_TIMEOUT_MS = 15_000;
 
 interface ShareCardProps {
   topThree: Aesthetic[];
   bottomThree: Aesthetic[];
   onClose: () => void;
-}
-
-/** Race html2canvas against a timeout so we never spin forever */
-function html2canvasWithTimeout(
-  element: HTMLElement,
-  options: Parameters<typeof html2canvas>[1],
-  timeoutMs: number,
-): Promise<HTMLCanvasElement> {
-  return Promise.race([
-    html2canvas(element, options),
-    new Promise<never>((_resolve, reject) =>
-      setTimeout(() => reject(new Error('Canvas generation timed out')), timeoutMs),
-    ),
-  ]);
 }
 
 /** Try sharing a URL via Web Share API (always works on iOS Safari) */
@@ -107,10 +92,10 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
     setSaving(true);
     setError(null);
     try {
-      const canvas = await html2canvasWithTimeout(cardRef.current, {
+      const canvas = await html2canvas(cardRef.current, {
         scale: 1.5,
         backgroundColor: '#0f172a',
-      }, CANVAS_TIMEOUT_MS);
+      });
 
       // Try Web Share API with file sharing (natural on mobile)
       const blob = await new Promise<Blob | null>((resolve) =>
