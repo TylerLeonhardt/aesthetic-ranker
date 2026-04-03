@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import html2canvas from 'html2canvas';
 import type { Aesthetic } from '../types';
 import { getMoodBoardImages } from '../utils/results';
+import { renderShareCard } from './renderShareCard';
 
 const SHARE_URL = 'tylerleonhardt.github.io/aesthetic-ranker';
 const FULL_URL = `https://${SHARE_URL}`;
@@ -38,7 +38,6 @@ async function tryCopyUrl(): Promise<boolean> {
 }
 
 export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardProps) {
-  const cardRef = useRef<HTMLDivElement>(null);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [localImages, setLocalImages] = useState<Map<string, string>>(new Map());
@@ -87,15 +86,12 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
   }, [topThree]);
 
   const handleSaveImage = useCallback(async () => {
-    if (!cardRef.current || savingRef.current) return;
+    if (savingRef.current) return;
     savingRef.current = true;
     setSaving(true);
     setError(null);
     try {
-      const canvas = await html2canvas(cardRef.current, {
-        scale: 1.5,
-        backgroundColor: '#0f172a',
-      });
+      const canvas = await renderShareCard(topThree, bottomThree, localImages);
 
       // Try Web Share API with file sharing (natural on mobile)
       const blob = await new Promise<Blob | null>((resolve) =>
@@ -130,7 +126,7 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
       savingRef.current = false;
       setSaving(false);
     }
-  }, []);
+  }, [topThree, bottomThree, localImages]);
 
   // Lock body scroll
   useEffect(() => {
@@ -176,7 +172,6 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
 
         {/* The shareable card — fixed size for consistent screenshots */}
         <div
-          ref={cardRef}
           data-testid="share-card"
           className="w-[340px] overflow-hidden rounded-2xl bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 p-6 shadow-2xl ring-1 ring-white/10"
         >
