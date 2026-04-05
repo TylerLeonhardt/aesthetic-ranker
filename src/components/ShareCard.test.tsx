@@ -62,7 +62,7 @@ function mockBlobPrefetch() {
 async function renderAndWaitForImages(ui: React.ReactElement) {
   const result = render(ui);
   await waitFor(() => {
-    expect(screen.getByText('📥 Save Image')).toBeInTheDocument();
+    expect(screen.getByText('Share')).toBeInTheDocument();
   });
   return result;
 }
@@ -118,10 +118,10 @@ describe('ShareCard', () => {
     expect(screen.getByTestId('share-card')).toBeInTheDocument();
   });
 
-  it('renders save image button after images load', async () => {
+  it('renders share button after images load', async () => {
     await renderAndWaitForImages(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
-    expect(screen.getByLabelText('Save image')).toBeInTheDocument();
-    expect(screen.getByText('📥 Save Image')).toBeInTheDocument();
+    expect(screen.getByLabelText('Share')).toBeInTheDocument();
+    expect(screen.getByText('Share')).toBeInTheDocument();
   });
 
   it('shows loading state while images are pre-fetching', () => {
@@ -130,7 +130,7 @@ describe('ShareCard', () => {
     render(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
 
     expect(screen.getByText('Loading…')).toBeInTheDocument();
-    expect(screen.getByLabelText('Save image')).toBeDisabled();
+    expect(screen.getByLabelText('Share')).toBeDisabled();
   });
 
   it('pre-fetches images as blob URLs on mount', async () => {
@@ -192,7 +192,7 @@ describe('ShareCard', () => {
     });
 
     await renderAndWaitForImages(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
-    fireEvent.click(screen.getByLabelText('Save image'));
+    fireEvent.click(screen.getByLabelText('Share'));
 
     await waitFor(() => {
       expect(mockedRenderShareCard).toHaveBeenCalled();
@@ -222,7 +222,7 @@ describe('ShareCard', () => {
     });
 
     await renderAndWaitForImages(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
-    fireEvent.click(screen.getByLabelText('Save image'));
+    fireEvent.click(screen.getByLabelText('Share'));
 
     await waitFor(() => {
       expect(shareFn).toHaveBeenCalledWith(
@@ -264,7 +264,7 @@ describe('ShareCard', () => {
     });
 
     await renderAndWaitForImages(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
-    fireEvent.click(screen.getByLabelText('Save image'));
+    fireEvent.click(screen.getByLabelText('Share'));
 
     await waitFor(() => {
       expect(shareFn).toHaveBeenCalled();
@@ -288,7 +288,7 @@ describe('ShareCard', () => {
     });
 
     await renderAndWaitForImages(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
-    fireEvent.click(screen.getByLabelText('Save image'));
+    fireEvent.click(screen.getByLabelText('Share'));
 
     await waitFor(() => {
       expect(shareFn).toHaveBeenCalledWith(
@@ -317,7 +317,7 @@ describe('ShareCard', () => {
     });
 
     await renderAndWaitForImages(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
-    fireEvent.click(screen.getByLabelText('Save image'));
+    fireEvent.click(screen.getByLabelText('Share'));
 
     await waitFor(() => {
       expect(screen.getByTestId('share-error')).toHaveTextContent(
@@ -343,7 +343,7 @@ describe('ShareCard', () => {
     });
 
     await renderAndWaitForImages(<ShareCard topThree={topThree} bottomThree={bottomThree} onClose={() => {}} />);
-    fireEvent.click(screen.getByLabelText('Save image'));
+    fireEvent.click(screen.getByLabelText('Share'));
 
     await waitFor(() => {
       expect(screen.getByTestId('share-error')).toHaveTextContent(

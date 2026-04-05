@@ -271,7 +271,7 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
           onClick={handleSaveImage}
           disabled={saving || !imagesReady}
           className="mt-3 flex w-full min-h-[44px] items-center justify-center gap-2 rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
-          aria-label="Save image"
+          aria-label="Share"
         >
           {!imagesReady ? (
             <>
@@ -281,10 +281,10 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
           ) : saving ? (
             <>
               <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
-              Saving…
+              Sharing…
             </>
           ) : (
-            '📥 Save Image'
+            'Share'
           )}
         </button>
       </div>
