@@ -101,7 +101,14 @@ export default function ShareCard({ topThree, bottomThree, onClose }: ShareCardP
         const file = new File([blob], 'my-aesthetic.png', { type: 'image/png' });
         if (navigator.canShare?.({ files: [file] })) {
           try {
-            await navigator.share({ files: [file], title: 'My Aesthetic Ranking' });
+            // text & url enrich the share sheet on Android; some platforms
+            // (notably iOS Safari) may ignore them when files are present.
+            await navigator.share({
+              files: [file],
+              title: 'My Aesthetic Ranking',
+              text: 'Check out my top 3 aesthetics! 🎨',
+              url: FULL_URL,
+            });
             return;
           } catch (err) {
             console.error('ShareCard file share cancelled/failed:', err);
